@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* font config here */
+
+
+/* custom css here */
+html, body, #__next {
+  height: 100%;
+  overflow: hidden;
+  --primary: transparent;
+  --secondary: transparent;
+}
+
+body{
+  margin: 0;
+  font-family:  theme('fontFamily.body');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: theme('fontFamily.heading');
+}
+
+h1 {
+  font-size: theme('fontSize.heading-xl');
+}
+h2 {
+  font-size: theme('fontSize.heading-lg');
+}
+h3 {
+  font-size: theme('fontSize.heading-md');
+}
+h4 {
+  font-size: theme('fontSize.heading-sm');
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--secondary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 8px;
+}
