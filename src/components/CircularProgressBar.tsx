@@ -1,5 +1,5 @@
-import classNames from "classnames";
 import React, { useRef, useEffect } from "react";
+import classNames from "classnames";
 import { CircularProgressBarProps } from "@/types/components";
 
 const CircularProgressBar = ({
