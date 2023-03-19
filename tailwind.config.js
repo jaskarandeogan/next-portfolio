@@ -25,8 +25,8 @@ module.exports = {
         "grey-1": "#F5F5F5",
       },
       fontFamily: {
-        heading: ["Poppins", "sans-serif"],
-        body: ["Poppins", "sans-serif"],
+        heading: ["SF Pro"],
+        body: ["SF Pro", "Mukta", "sans-serif"],
       },
       fontSize: {
         "heading-xs": ["0.875rem", "1.25rem"],
