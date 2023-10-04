@@ -7,7 +7,7 @@ import classNames from "classnames"
 
 export default function Home() {
   return (
-    <section className="flex mx-[140px] gap-5 h-full">
+    <section className="flex md:mx-[50px] xl:mx-[140px] gap-5 h-full">
       <section className="flex-1 flex flex-col h-full max-w-[450px] my-[100px]  justify-between">
         <div className="flex-1 flex flex-col gap-[100px]">
           <ProfileSection />
