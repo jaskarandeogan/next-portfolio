@@ -15,7 +15,7 @@ const SocialIcons = () => {
             <FaLinkedinIn className={classNames('h-10 w-10 text-primary-0 hover:cursor-pointer hover:-translate-y-1 transition-all')}
                 onClick={
                     () => {
-                        window.open('www.linkedin.com/in/jaskaran-deogan')
+                        window.open('https://www.linkedin.com/in/jaskaran-deogan')
                     }
                 }
             />
