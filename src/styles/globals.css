@@ -13,6 +13,7 @@ html, body, #__next {
   overflow: hidden;
   --primary: transparent;
   --secondary: transparent;
+  font-family: 'Inter';
 }
 
 body{
