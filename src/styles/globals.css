@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 /* font config here */
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
-@import url('@/assets/fonts/SF-Pro/stylesheet.css');
 
 /* custom css here */
 html, body, #__next {

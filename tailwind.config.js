@@ -62,7 +62,7 @@ module.exports = {
       },
       fontFamily: {
         heading: ["Inter"],
-        body: ["Inter", "Mukta", "sans-serif"],
+        body: ["Inter"],
       },
       fontSize: {
         "heading-xs": ["0.875rem", "1.25rem"],
