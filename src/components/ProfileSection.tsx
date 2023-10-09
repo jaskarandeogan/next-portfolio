@@ -20,7 +20,7 @@ const ProfileSection = () => {
                         'text-[.938rem]'
                     )}>at PayFelix</span>
                 </h3>
-                <p className={classNames('text-grey-5','text-base font-normal')}>
+                <p className={classNames('text-grey-5', 'text-base font-normal')}>
                     I build accessible, inclusive products and digital experiences for the web.
                 </p>
             </div>

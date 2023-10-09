@@ -13,7 +13,7 @@ const ProjectCard = ({
     technologies = ["React", "TypeScript", "TailwindCSS"],
     githubLink = "https://github.com",
     liveLink = "https://github.com",
-    image = "/images/projects/1.png",
+    image = "/projects/1.png",
     projectBlogLink = "https://github.com"
 }: {
     title: string,
@@ -37,7 +37,7 @@ const ProjectCard = ({
             'group'
         )}>
             <div className={classNames('flex min-w-fit')}>
-                <Image src={'/projects/1.png'} alt={title} width={200} height={200} 
+                <Image src={image || '/projects/1.png'} alt={title} width={200} height={200} 
                     className='object-cover rounded-sm'
                 />
             </div>
@@ -54,7 +54,7 @@ const ProjectCard = ({
                     className={classNames('group-hover:text-primary-0', 'group-hover:border-primary-0', 'group-hover:bg-secondary-0/15',
                         'transition-all')}
                 />
-                <div className={classNames('flex', 'justify-between', 'h-5')}>
+                <div className={classNames('flex', 'justify-between', 'h-8')}>
                     <div className={classNames('flex', 'items-center', 'gap-4')}>
                         <a href={githubLink} target="_blank" rel="noopener noreferrer">
                             <FaGithub className='text-grey-5 hover:text-grey-8 w-6 h-6' />

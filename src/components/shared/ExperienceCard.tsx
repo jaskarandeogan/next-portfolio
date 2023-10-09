@@ -39,7 +39,7 @@ const ExperienceCard = ({
             'px-6',
             'py-6'
         )}>
-            <p className={classNames('text-lg', 'min-w-[200px]')}>
+            <p className={classNames('text-lg', 'min-w-[200px]', 'font-medium')}>
                 {startDate} - {endDate}
             </p>
             <div className={classNames('flex flex-col gap-6')}>

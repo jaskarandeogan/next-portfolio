@@ -17,7 +17,7 @@ const Experience = () => {
         technologies={["React", "TypeScript", "TailwindCSS"]}
         githubLink="https://github.com"
         liveLink="https://github.com"
-        image="/"
+        image = "/projects/1.png"
         projectBlogLink="https://github.com"
       />
       <ProjectCard
@@ -26,7 +26,7 @@ const Experience = () => {
         technologies={["React", "TypeScript", "TailwindCSS"]}
         githubLink="https://github.com"
         liveLink="https://github.com"
-        image="/"
+        image = "/projects/1.png"
         projectBlogLink="https://github.com"
       />
       <ProjectCard
@@ -35,12 +35,13 @@ const Experience = () => {
         technologies={["React", "TypeScript", "TailwindCSS"]}
         githubLink="https://github.com"
         liveLink="https://github.com"
-        image="/"
+        image = "/projects/1.png"
         projectBlogLink="https://github.com"
       />
       <div>
         <LinkButton
           rightIcon={<MdArrowOutward />}
+          classnames='px-0'
         >
           Archives
         </LinkButton>
