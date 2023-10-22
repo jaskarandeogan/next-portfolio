@@ -42,7 +42,6 @@ const ExperienceCard = ({
             'flex',
             'flex-col',
             '2xl:flex-row',
-            'xl:gap-4',
             '2xl:gap-10',
             'px-6',
             'py-6'
