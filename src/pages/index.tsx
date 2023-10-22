@@ -10,7 +10,7 @@ export default function Index() {
 
   useEffect(() => {
     if (pathname === "/" && !isDevenv ) {
-      replace("/comingsoon");
+      replace("/");
     }
   }, [isDevenv, pathname, replace]);
 
