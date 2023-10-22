@@ -16,7 +16,7 @@ const ColumnNavigation = (
   }
 ) => {
   const [navigationItems, setNavigationItems] = useState<NavigationItem[]>([
-    { label: 'About', url: '#', active: true },
+    { label: 'About', url: '#about', active: true },
     { label: 'Experience', url: '#experience', active: false },
     { label: 'Projects', url: '#projects', active: false },
     { label: 'Blogs', url: '#blogs', active: false }

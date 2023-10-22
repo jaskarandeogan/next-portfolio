@@ -17,7 +17,7 @@ const Home = () => {
     });
 
     const [section2Ref, inView2, entry2] = useInView({
-        threshold: 0.1,
+        threshold: 0.4,
     });
 
     const [section3Ref, inView3, entry3] = useInView({
@@ -29,7 +29,6 @@ const Home = () => {
     });
 
     const [activeItem, setActiveItem] = useState('About');
-
 
     useEffect(() => {
         if (inView1) {
@@ -45,6 +44,8 @@ const Home = () => {
 
         }
     }, [inView1, entry1, inView2, entry2, inView3, entry3, inView4, entry4, section1Ref, section2Ref, section3Ref, section4Ref])
+
+    
 
     return (
         <section className="flex md:mx-[50px] xl:mx-[140px] gap-5 h-screen ">
@@ -66,19 +67,19 @@ const Home = () => {
                     <ProfileSection />
                     <SocialIcons />
                 </div>
-                <div className={classNames('md:pt-[100px]')} ref={section1Ref}>
+                <div id="about" className={classNames('md:pt-[100px]')} ref={section1Ref}>
                     <h1 className={classNames('font-medium text-3xl mb-7', activeItem === 'About' && 'text-grey-8 transition-all')}>About Me</h1>
                     <AboutComponent isActive={activeItem === 'About' ? true : false} />
                 </div>
-                <div className={classNames('flex flex-col gap-1')} ref={section2Ref}>
+                <div id="experience" className={classNames('flex flex-col gap-1')} ref={section2Ref}>
                     <h1 className={classNames('font-medium text-3xl my-7 transition-all', activeItem === 'Experience' && 'text-grey-8 transition-all')}>Experience So Far</h1>
                     <Experience isActive={activeItem === 'Experience' ? true : false} />
                 </div>
-                <div className={classNames('flex flex-col gap-1')} ref={section3Ref}>
+                <div id="projects" className={classNames('flex flex-col gap-1')} ref={section3Ref}>
                     <h1 className={classNames('font-medium text-3xl my-7', activeItem === 'Projects' && 'text-grey-8 transition-all')}>Projects</h1>
                     <Projects isActive={activeItem === 'Projects' ? true : false} />
                 </div>
-                <div className={classNames('flex flex-col gap-1')} ref={section4Ref}>
+                <div id="blogs" className={classNames('flex flex-col gap-1')} ref={section4Ref}>
                     <h1 className={classNames('font-medium text-3xl my-7', activeItem === 'Blogs' && 'text-grey-8 transition-all')}>Blogs</h1>
                     <Blogs isActive={activeItem === 'Blogs' ? true : false} />
                 </div>
