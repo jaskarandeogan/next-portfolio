@@ -38,12 +38,12 @@ const ColumnNavigation = (
         <a
           key={item.url}
           href={item.url}
-          className={item.active ? classNames('group', 'flex', 'text-xl', 'font-medium', 'text-primary-0', 'gap-3') : classNames('text-xl', 'font-medium', 'flex', 'gap-3', 'hover:text-grey-8', 'transition-all')}
+          className={item.active ? classNames( 'flex', 'text-xl', 'font-medium', 'text-primary-0', 'gap-3') : classNames('group','text-xl', 'font-medium', 'flex', 'gap-3', 'transition-all')}
           onClick={() =>
             handleSelection(item.label)}
         >
-          <hr className={classNames("group-hover:border-grey-0 border-2 border-t  my-4 transition-all", item.active && 'w-[100px] border-primary-0 transition-all', !item.active && 'border-grey-5 w-[60px] transition-all',)} />
-          <span className={'group-hover:border-text-grey-0'}>
+          <hr className={classNames("group-hover:border-grey-8 border-2 border-t  my-4 transition-all", item.active && 'w-[100px] border-primary-0 transition-all', !item.active && 'border-grey-5 w-[60px] transition-all',)} />
+          <span className={'group-hover:text-grey-8'}>
             {item.label}
           </span>
         </a>

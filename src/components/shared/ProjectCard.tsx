@@ -14,7 +14,8 @@ const ProjectCard = ({
     githubLink = "https://github.com",
     liveLink = "https://github.com",
     image = "/projects/1.png",
-    projectBlogLink = "https://github.com"
+    projectBlogLink = "https://github.com",
+    caption= "caption here"
 }: {
     title: string,
     description: string,
@@ -23,6 +24,7 @@ const ProjectCard = ({
     liveLink: string,
     projectBlogLink: string,
     image?: string,
+    caption?: string
 }) => {
     const truncateText = (text: string, maxWords: number) => {
         const words = text.split(' ');
@@ -54,7 +56,7 @@ const ProjectCard = ({
                 <Image src={image || '/projects/1.png'} alt={title} width={200} height={200}
                     className='object-cover rounded-sm  hidden xl:block'
                 />
-                <span className='italic text-center'>caption here</span>
+                <span className='italic text-center'>{caption}</span>
             </div>
             <div className='flex flex-col gap-4'>
                 <a href={projectBlogLink}>
