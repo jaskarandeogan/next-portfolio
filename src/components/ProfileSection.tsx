@@ -5,12 +5,15 @@ import Image from "next/image";
 const ProfileSection = () => {
     return (
         <section className={classNames('flex',
+            'flex-col',
+            'lg:flex-row',
             'max-w-[450px] ',
             'gap-6',
-            'items-center'
+            'lg:items-center'
         )}>
-            <Image src="/images/profile.png" alt="Picture of the author" width={133} height={133} />
-            <div className="flex flex-col gap-3">
+            <Image src="/images/profile.png" alt="Picture of the author" width={133} height={133} className="hidden md:block"/>
+            <Image src="/images/profile.png" alt="Picture of the author" width={200} height={200} className="m-auto md:hidden"/>
+            <div className="flex flex-col gap-1 lg:gap-3">
                 <h2 className={classNames('text-primary-0',
                     'text-[2rem]',
                     'font-bold',
@@ -20,7 +23,7 @@ const ProfileSection = () => {
                         'text-[.938rem]'
                     )}>at PayFelix</span>
                 </h3>
-                <p className={classNames('text-grey-5','text-base font-normal')}>
+                <p className={classNames('text-grey-5', 'text-base font-normal')}>
                     I build accessible, inclusive products and digital experiences for the web.
                 </p>
             </div>
