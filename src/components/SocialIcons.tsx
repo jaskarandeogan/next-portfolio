@@ -6,13 +6,13 @@ import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 
 const SocialIcons = () => {
     return (
-        <section className={classNames('flex', 'gap-8', 'items-center')}>
+        <section className={classNames('flex', 'gap-8', 'items-center', 'justify-center', 'md:justify-start')}>
             <button
                 onClick={() => {
                     window.open('https://twitter.com/DeoganJaskaran')
                 }}
             >
-                <AiOutlineTwitter className={classNames('h-10 w-10 text-primary-0 hover:-translate-y-1 transition-all')}
+                <AiOutlineTwitter className={classNames('h-9 w-9 text-primary-0 hover:-translate-y-1 transition-all')}
                 />
 
             </button>
@@ -23,7 +23,7 @@ const SocialIcons = () => {
                     }
                 }
             >
-                <FaLinkedinIn className={classNames('h-10 w-10 text-primary-0 hover:-translate-y-1 transition-all')}
+                <FaLinkedinIn className={classNames('h-9 w-9 text-primary-0 hover:-translate-y-1 transition-all')}
                 />
             </button>
             <button
@@ -33,7 +33,7 @@ const SocialIcons = () => {
                     }
                 }
             >
-                <FaInstagram className={classNames('h-10 w-10 text-primary-0 hover:-translate-y-1 transition-all')}
+                <FaInstagram className={classNames('h-9 w-9 text-primary-0 hover:-translate-y-1 transition-all')}
                 />
             </button>
             <button
@@ -43,7 +43,7 @@ const SocialIcons = () => {
                     }
                 }
             >
-                <FaGithub className={classNames('h-10 w-10 text-primary-0 hover:-translate-y-1 transition-all')}
+                <FaGithub className={classNames('h-9 w-9 text-primary-0 hover:-translate-y-1 transition-all')}
                 />
             </button>
         </section>
