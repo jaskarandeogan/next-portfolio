@@ -1,19 +1,25 @@
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import Home from "@/layouts/Home";
+import { useState, useEffect } from "react";
+import { HashLoader } from "react-spinners";
 
 
 export default function Index() {
-  const { pathname, replace } = useRouter();
-
-  const isDevenv = process.env.NEXT_PUBLIC_ENV === "development";
+  
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (pathname === "/" && !isDevenv ) {
-      replace("/comingsoon");
-    }
-  }, [isDevenv, pathname, replace]);
+    setTimeout(() => {
+    setLoading(false);
+    }, 2500);
+  }, []);
 
-  if(isDevenv) return <Home />
-  else return null;
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <HashLoader color="#97F36B" />
+      </div>
+    );
+  }
+
+  return <Home />;
 }

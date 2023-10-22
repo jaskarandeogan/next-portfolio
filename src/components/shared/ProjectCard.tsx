@@ -52,9 +52,11 @@ const ProjectCard = ({
             <div className={classNames('min-w-fit flex flex-col gap-2 items-center')}>
                 <Image src={image || '/projects/1.png'} alt={title} width={400} height={300}
                     className='object-cover rounded-sm  xl:hidden'
+                    loading='lazy'
                 />
                 <Image src={image || '/projects/1.png'} alt={title} width={200} height={200}
                     className='object-cover rounded-sm  hidden xl:block'
+                    loading='eager'
                 />
                 <span className='italic text-center'>{caption}</span>
             </div>

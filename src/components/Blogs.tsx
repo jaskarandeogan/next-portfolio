@@ -13,7 +13,7 @@ const Experience = ({isActive}:{
         title='Supercharge Your UI Development with Storybook'
         date='Mar 2023'
         link='https://dev.to/jaskarandeogan/supercharge-your-ui-development-with-storybook-1nhb'
-        image='/blogs/storybook.jpg'
+        image='https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/storybook.jpg?alt=media&token=ddb2e1ae-658b-484d-95b7-4ecb91ae802a&_gl=1*ql6hru*_ga*NzU2NzY3NjI5LjE2ODY1MzQ5MDI.*_ga_CW55HF8NVT*MTY5Nzk2NjAzNC40LjEuMTY5Nzk2NjgxNy4xMi4wLjA.'
       />
       <BlogsCard
         title='My recent experience at a Web3 meetup'
