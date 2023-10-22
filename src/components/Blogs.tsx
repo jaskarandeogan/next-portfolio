@@ -10,21 +10,22 @@ const Experience = ({isActive}:{
   return (
     <section className='flex flex-col gap-10'>
       <BlogsCard
-        title='Sed ut perspiciatis unde omnis iste'
-        date='Jan 2021'
-        link='https://github.com'
-        image='/blogs/1.png'
+        title='Supercharge Your UI Development with Storybook'
+        date='Mar 2023'
+        link='https://dev.to/jaskarandeogan/supercharge-your-ui-development-with-storybook-1nhb'
+        image='/blogs/storybook.jpg'
       />
       <BlogsCard
-        title='Sed ut perspiciatis unde omnis iste'
-        date='Jan 2021'
-        link='https://github.com'
+        title='My recent experience at a Web3 meetup'
+        date='Sep 2023'
+        link='https://www.linkedin.com/posts/jaskaran-deogan_member-monthly-meetups-activity-7110421563505577984-1sR_?utm_source=share&utm_medium=member_desktop'
         image='/blogs/1.png'
       />
       <div>
         <LinkButton
           rightIcon={<MdArrowOutward />}
           classnames='px-0'
+          onClick={() => window.open("/comingsoon", "_blank")}
         >
           Archives
         </LinkButton>

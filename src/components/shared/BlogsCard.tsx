@@ -24,7 +24,6 @@ const BlogsCard = ({
             'flex',
             'flex-col',
             'md:flex-row',
-            'md:items-center',
             'gap-5',
             'md:gap-10',
             'px-6',
@@ -32,9 +31,13 @@ const BlogsCard = ({
             'group'
         )}>
             <div className={classNames('flex min-w-fit')}>
-                <Image src={image || '/blogs/1.png'} alt={title} width={200} height={200}
-                    className='object-cover rounded-sm'
+                <Image src={image || '/blogs/1.png'} alt={title} width={400} height={300}
+                    className='object-cover rounded-sm  xl:hidden'
                 />
+                <Image src={image || '/blogs/1.png'} alt={title} width={200} height={200}
+                    className='object-cover rounded-sm  hidden xl:block'
+                />
+
             </div>
             <div className='flex flex-col gap-5'>
                 <div className='flex flex-col gap-3'>
@@ -52,7 +55,7 @@ const BlogsCard = ({
                     onClick={() => {
                         window.open(link, '_blank')
                     }}
-                    classnames='px-0 '
+                    classnames='px-0'
                 >
                     Read More
                 </LinkButton>

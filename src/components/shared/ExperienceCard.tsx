@@ -51,21 +51,21 @@ const ExperienceCard = ({
                 {startDate} - {endDate}
             </p>
             <div className={classNames('flex flex-col gap-6')}>
-                <h2 className={classNames('text-primary-0', 'font-semibold',
-                    'text-xl',
-                    'md:text-2xl',
-                    'xl:text-3xl',
-                    'group-hover:text-secondary-0',
-                    'transition-all',
-                    'flex',
-                    'items-center'
-                )}
-                    onClick={() => {
-                        window.open(company.website, '_blank')
-                    }}
-                >
-                    {title} - {company.name} <span className='p-2 group-hover:-translate-y-2 transition-all group-hover:text-secondary-0'><MdArrowOutward /></span>
-                </h2>
+                <a href={company.website} target='_blank'>
+                    <h2 className={classNames('text-primary-0', 'font-semibold',
+                        'text-xl',
+                        'md:text-2xl',
+                        'xl:text-3xl',
+                        'group-hover:text-secondary-0',
+                        'transition-all',
+                        'flex',
+                        'items-center'
+                    )}
+    
+                    >
+                        {title} - {company.name} <span className='p-2 group-hover:-translate-y-2 transition-all group-hover:text-secondary-0'><MdArrowOutward /></span>
+                    </h2>
+                </a>
                 <p className={classNames('')}>
                     {description}
                 </p>
