@@ -15,7 +15,7 @@ const Experience = ({isActive}:{
         technologies={["Wordpress", "Elementor", "Namecheap", "GSAP", "Zoho"]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://dev.softpos.cloud/staging/"
-        image = "/projects/payfelix.svg"
+        image = "https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Payfelix.jpg?alt=media&token=33f30d76-99a1-4c4b-a74f-39471b3682f3&_gl=1*1ky5gq4*_ga*NzU2NzY3NjI5LjE2ODY1MzQ5MDI.*_ga_CW55HF8NVT*MTY5Nzk2NjAzNC40LjEuMTY5Nzk2NjM2MS4xNC4wLjA."
         caption = "Payfelix"
         projectBlogLink="/comingsoon"
       />
@@ -25,7 +25,7 @@ const Experience = ({isActive}:{
         technologies={["React", "NodeJS", "TailwindCSS", "AWS", "Stytch", "PostgreSQL", "CICD"]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://g-core-cloned.vercel.app/"
-        image = "/projects/garden-logo.png"
+        image = "https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/garden-logo.png?alt=media&token=de1a98bc-da86-43ae-8ee1-5cb719aa496f&_gl=1*hvjpmd*_ga*NzU2NzY3NjI5LjE2ODY1MzQ5MDI.*_ga_CW55HF8NVT*MTY5Nzk2NjAzNC40LjEuMTY5Nzk2NjU0MC42MC4wLjA."
         caption = "Pulse"
         projectBlogLink="/comingsoon"
       />
@@ -35,7 +35,7 @@ const Experience = ({isActive}:{
         technologies={["NextJS", "TypeScript", "Firebase", "Mapbox", "TailwindCSS", "Storybook", "Cypress", "Netlify"]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://home-chow-cloned-6gcsivk52-jaskarandeogan.vercel.app/login"
-        image = "/projects/homechow-logo.png"
+        image = "https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Homechow-logo.png?alt=media&token=84699643-53ea-4a19-b7bd-a8be516f4279&_gl=1*1o11zz5*_ga*NzU2NzY3NjI5LjE2ODY1MzQ5MDI.*_ga_CW55HF8NVT*MTY5Nzk2NjAzNC40LjEuMTY5Nzk2NjU2Ni4zNC4wLjA."
         projectBlogLink="/comingsoon"
         caption='Homechow'
       />
@@ -45,7 +45,7 @@ const Experience = ({isActive}:{
         technologies={["Wordpress", "Gutanberg", "Hostinger", "Elementor", "SEO"]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://anandishwar.com/"
-        image = "/projects/ai-design.png"
+        image = "https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/ai-design.png?alt=media&token=8c4beae6-5df9-4248-84a1-6b29ff1f6077&_gl=1*14u2id4*_ga*NzU2NzY3NjI5LjE2ODY1MzQ5MDI.*_ga_CW55HF8NVT*MTY5Nzk2NjAzNC40LjEuMTY5Nzk2NjUyMS4xMy4wLjA."
         caption='AI Designs'
         projectBlogLink="/comingsoon"
       />
