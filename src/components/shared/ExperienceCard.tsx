@@ -41,7 +41,7 @@ const ExperienceCard = ({
             'transition-all',
             'flex',
             'flex-col',
-            'lg:flex-row',
+            'xl:flex-row',
             'xl:gap-4',
             '2xl:gap-10',
             'px-6',

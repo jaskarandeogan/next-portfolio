@@ -4,7 +4,9 @@ import ProjectCard from './shared/ProjectCard'
 import LinkButton from './shared/LinkButton'
 import { MdArrowOutward } from 'react-icons/md'
 
-const Experience = () => {
+const Experience = ({isActive}:{
+  isActive: boolean
+}) => {
   const company = {
     name: "Payfelix",
     website: "https://www.payfelix.com"

@@ -2,7 +2,9 @@ import classNames from 'classnames'
 import React from 'react'
 import ExperienceCard from './shared/ExperienceCard'
 
-const Experience = () => {
+const Experience = ({isActive}:{
+  isActive: boolean
+}) => {
   const company = {
     name: "Payfelix",
     website: "https://www.payfelix.com"

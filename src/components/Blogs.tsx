@@ -4,7 +4,9 @@ import LinkButton from './shared/LinkButton'
 import { MdArrowOutward } from 'react-icons/md'
 import BlogsCard from './shared/BlogsCard'
 
-const Experience = () => {
+const Experience = ({isActive}:{
+  isActive: boolean
+}) => {
   return (
     <section className='flex flex-col gap-10'>
       <BlogsCard
