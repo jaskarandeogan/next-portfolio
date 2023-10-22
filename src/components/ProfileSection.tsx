@@ -26,7 +26,7 @@ const ProfileSection = () => {
                     </h3>
                 </a>
                 <p className={classNames('text-grey-5', 'text-base font-normal')}>
-                    I build accessible, inclusive products and digital experiences for the web.
+                    I create web experiences that look good and perform even better.
                 </p>
             </div>
 
