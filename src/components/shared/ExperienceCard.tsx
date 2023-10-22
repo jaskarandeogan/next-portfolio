@@ -57,7 +57,6 @@ const ExperienceCard = ({
                     'xl:text-3xl',
                     'group-hover:text-secondary-0',
                     'transition-all',
-                    'hover:cursor-pointer',
                     'flex',
                     'items-center'
                 )}

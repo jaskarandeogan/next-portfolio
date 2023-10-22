@@ -34,7 +34,7 @@ const CircularProgressBar = ({
 	return (
 		<div
 			ref={progressBarRef}
-			className={classNames("rounded-full p-[2px] cursor-pointer w-fit h-fit", className)}
+			className={classNames("rounded-full p-[2px] w-fit h-fit", className)}
 		>
 			{children}
 		</div>
