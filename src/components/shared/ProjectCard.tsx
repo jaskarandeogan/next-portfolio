@@ -24,6 +24,14 @@ const ProjectCard = ({
     projectBlogLink: string,
     image?: string,
 }) => {
+    const truncateText = (text: string, maxWords: number) => {
+        const words = text.split(' ');
+        if (words.length > maxWords) {
+            return words.slice(0, maxWords).join(' ') + '...';
+        }
+        return text;
+    };
+
     return (
         <div className={classNames(
             'w-full',
@@ -31,24 +39,31 @@ const ProjectCard = ({
             'hover: bg-grey-4',
             'transition-all',
             'flex',
-            'gap-10',
+            'flex-col',
+            'xl:flex-row',
+            'gap-5',
+            'xl:gap-10',
             'px-6',
             'py-6',
             'group'
         )}>
-            <div className={classNames('flex min-w-fit')}>
-                <Image src={image || '/projects/1.png'} alt={title} width={200} height={200} 
-                    className='object-cover rounded-sm'
+            <div className={classNames('min-w-fit flex flex-col gap-2 items-center')}>
+                <Image src={image || '/projects/1.png'} alt={title} width={400} height={300}
+                    className='object-cover rounded-sm  xl:hidden'
                 />
+                <Image src={image || '/projects/1.png'} alt={title} width={200} height={200}
+                    className='object-cover rounded-sm  hidden xl:block'
+                />
+                <span className='italic text-center'>caption here</span>
             </div>
             <div className='flex flex-col gap-4'>
                 <a href={projectBlogLink}>
-                    <h2 className='text-primary-0 font-semibold'>
+                    <h2 className='text-primary-0 font-semibold text:2xl lg:3xl'>
                         {title}
                     </h2>
                 </a>
                 <p>
-                    {description}
+                    {truncateText(description, 20)}
                 </p>
                 <Chips technologies={technologies}
                     className={classNames('group-hover:text-primary-0', 'group-hover:border-primary-0', 'group-hover:bg-secondary-0/15',
@@ -63,16 +78,28 @@ const ProjectCard = ({
                             <SlGlobe className='text-grey-5 hover:text-grey-8 w-6 h-6' />
                         </a>
                     </div>
-                    <div className='hidden group-hover:block'>
-                        <LinkButton
-                            rightIcon={<MdArrowOutward />}
-                            onClick={() => {
-                                window.open(projectBlogLink, '_blank')
-                            }}
-                        >
-                            Read More
-                        </LinkButton>
+                    <div className='hidden md:block'>
+                        <div className='hidden group-hover:block'>
+                            <LinkButton
+                                rightIcon={<MdArrowOutward />}
+                                onClick={() => {
+                                    window.open(projectBlogLink, '_blank')
+                                }}
+                            >
+                                Read More
+                            </LinkButton>
+                        </div>
                     </div>
+                </div>
+                <div className='md:hidden'>
+                    <LinkButton
+                        rightIcon={<MdArrowOutward />}
+                        onClick={() => {
+                            window.open(projectBlogLink, '_blank')
+                        }}
+                    >
+                        Read More
+                    </LinkButton>
                 </div>
             </div>
         </div>

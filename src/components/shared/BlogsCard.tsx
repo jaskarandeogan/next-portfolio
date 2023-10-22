@@ -22,8 +22,11 @@ const BlogsCard = ({
             'hover: bg-grey-4',
             'transition-all',
             'flex',
-            'items-center',
-            'gap-10',
+            'flex-col',
+            'md:flex-row',
+            'md:items-center',
+            'gap-5',
+            'md:gap-10',
             'px-6',
             'py-6',
             'group'

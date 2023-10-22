@@ -33,9 +33,14 @@ const ExperienceCard = ({
             'rounded-lg',
             'group',
             'hover:bg-grey-4',
+            'hover:shadow-lg',
+            'hover:border',
+            'hover:border-secondary-4',
             'transition-all',
             'flex',
-            'gap-10',
+            'flex-col',
+            'xl:gap-4',
+            '2xl:gap-10',
             'px-6',
             'py-6'
         )}>
@@ -44,6 +49,9 @@ const ExperienceCard = ({
             </p>
             <div className={classNames('flex flex-col gap-6')}>
                 <h2 className={classNames('text-primary-0', 'font-semibold',
+                    'text-xl',
+                    'md:text-2xl',
+                    'xl:text-3xl',
                     'group-hover:text-secondary-0',
                     'transition-all',
                     'hover:cursor-pointer',
