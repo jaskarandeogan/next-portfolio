@@ -15,9 +15,9 @@ const Experience = ({isActive}:{
         technologies={["Wordpress", "Elementor", "Namecheap", "GSAP", "Zoho"]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://dev.softpos.cloud/staging/"
-        image = "/projects/payfelix.jpg"
+        image = "/projects/payfelix.svg"
         caption = "Payfelix"
-        projectBlogLink="#"
+        projectBlogLink="/comingsoon"
       />
       <ProjectCard
         title="Garden - Pulse"
