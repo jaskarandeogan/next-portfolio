@@ -13,7 +13,6 @@ const Home = () => {
 
     const [section1Ref, inView1, entry1] = useInView({
         threshold: 0.8,
-
     });
 
     const [section2Ref, inView2, entry2] = useInView({
@@ -41,11 +40,8 @@ const Home = () => {
 
         } else if (inView4) {
             setActiveItem('Blogs')
-
         }
     }, [inView1, entry1, inView2, entry2, inView3, entry3, inView4, entry4, section1Ref, section2Ref, section3Ref, section4Ref])
-
-    
 
     return (
         <section className="flex md:mx-[50px] xl:mx-[140px] gap-5 h-screen ">
@@ -83,9 +79,9 @@ const Home = () => {
                     <h1 className={classNames('font-medium text-3xl my-7', activeItem === 'Blogs' && 'text-grey-8 transition-all')}>Blogs</h1>
                     <Blogs isActive={activeItem === 'Blogs' ? true : false} />
                 </div>
-                <div className={classNames('pb-5')}>
-                    <p className={classNames('font-medium', '')}>
-                        loosely designed in <span className='text-primary-0'>Figma</span> and coded in Visual Studio Code. built using <span className={classNames('text-secondary-0')}>Next.js</span>  with Tailwind CSS, then deployed on <span className='text-grey-8'>Vercel</span>. The <span className='text-primary-0'>Inter</span> typeface is used for all of the text.
+                <div className={classNames('pb-10')}>
+                    <p className={classNames('font-medium')}>
+                        Loosely designed in <span className='text-primary-0'>Figma</span> and coded in Visual Studio Code. built using <span className={classNames('text-secondary-0')}>Next.js</span>  with Tailwind CSS, then deployed on <span className='text-grey-8'>Vercel</span>. The <span className='text-primary-0'>Inter</span> typeface is used for all of the text.
                     </p>
                 </div>
             </section>

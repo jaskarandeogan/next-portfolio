@@ -41,7 +41,7 @@ const Experience = ({isActive}:{
         company={garden}
         startDate={garden.startDate}
         endDate={garden.endDate}
-        description={`"Jas helped us a lot in the early days of Garden! He is a wonderful developer who got along with the rest of the team, and was very proactive and deeply invested in building our front-end stack. Highly recommend to anyone looking for a team-oriented full-stack developer." - Adi Sidapara, CEO at Garden`}
+        description={`Garden Intelligence turns on-chain data into revenue by providing customers with actionable insights so that they can understand their users better and seek revenue-generating opportunities on the blockchain.`}
         technologies={["React", "TailwindCSS", "NodeJS", "AWS", "Stytch", "PostgreSQL"]}
       />
       <ExperienceCard
