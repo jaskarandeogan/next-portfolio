@@ -5,21 +5,21 @@ import { HashLoader } from "react-spinners";
 
 export default function Index() {
   
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //   setLoading(false);
-  //   }, 2500);
-  // }, []);
+  useEffect(() => {
+    setTimeout(() => {
+    setLoading(false);
+    }, 2500);
+  }, []);
 
-  // if (loading) {
-  //   return (
-  //     <div className="flex items-center justify-center h-screen">
-  //       <HashLoader color="#97F36B" />
-  //     </div>
-  //   );
-  // }
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <HashLoader color="#97F36B" />
+      </div>
+    );
+  }
 
   return <Home />;
 }
