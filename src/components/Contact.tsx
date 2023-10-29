@@ -38,7 +38,7 @@ const Contact = ({
             }, (error) => {
                 console.log(error.text);
             });
-
+            
         setIsFormSubmitted(true)
     }
 
