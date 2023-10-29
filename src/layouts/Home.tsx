@@ -8,6 +8,8 @@ import Projects from "@/components/Projects"
 import Blogs from "@/components/Blogs"
 import classNames from "classnames"
 import { useInView } from 'react-intersection-observer';
+import { BsChatTextFill } from 'react-icons/bs'
+import Contact from '@/components/Contact'
 
 const Home = () => {
 
@@ -28,6 +30,7 @@ const Home = () => {
     });
 
     const [activeItem, setActiveItem] = useState('About');
+    const [isChatOpen, setIsChatOpen] = useState(false);
 
     useEffect(() => {
         if (inView1) {
@@ -41,10 +44,11 @@ const Home = () => {
         } else if (inView4) {
             setActiveItem('Blogs')
         }
+        isChatOpen && setIsChatOpen(false)
     }, [inView1, entry1, inView2, entry2, inView3, entry3, inView4, entry4, section1Ref, section2Ref, section3Ref, section4Ref])
 
     return (
-        <section className="flex md:mx-[50px] xl:mx-[140px] gap-5 h-screen ">
+        <section className="flex md:mx-[50px] xl:mx-[140px] gap-5 h-screen">
             <section className="hidden flex-1 md:flex flex-col h-full max-w-[450px] pt-[100px]  justify-between">
                 <div className="flex-1 flex flex-col gap-5 lg:gap-[100px]">
                     <ProfileSection />
@@ -85,6 +89,19 @@ const Home = () => {
                     </p>
                 </div>
             </section>
+            <div className='absolute bottom-0 right-0 m-10 flex flex-col justify-end items-end gap-2'>
+                {isChatOpen &&
+                    <Contact
+                        isChatOpen={isChatOpen}
+                        setIsChatOpen={setIsChatOpen}
+                    />
+                }
+                <BsChatTextFill className='text-primary-0 text-6xl h-8 w-8' onClick={
+                    () => {
+                        setIsChatOpen(!isChatOpen)
+                    }
+                } />
+            </div>
         </section>
     )
 }

@@ -7,16 +7,19 @@ interface LinkButtonProps {
     children: string;
     classnames?: string;
     onClick?: () => void;
+    type?: 'button' | 'submit' | 'reset';
 }
 
 const LinkButton: React.FC<LinkButtonProps> = ({ leftIcon, rightIcon, children, classnames,
-    onClick
+    onClick,
+    type = 'button'
 }) => {
     return (
         <button className={classNames("group font-medium py-2 px-4 rounded flex items-center",
             'text-primary-0', 'transition-all', classnames
         )}
             onClick={onClick}
+            type={type}
         >
             {leftIcon && <span className="mr-3 font-bold group-hover:-translate-y-1 transition-all">{leftIcon}</span>}
             {children && children}
