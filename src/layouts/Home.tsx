@@ -9,8 +9,7 @@ import Blogs from "@/components/Blogs"
 import classNames from "classnames"
 import { useInView } from 'react-intersection-observer';
 import { BsChatTextFill } from 'react-icons/bs'
-import { FiArrowUpRight } from 'react-icons/fi'
-import LinkButton from '@/components/shared/LinkButton'
+import Contact from '@/components/Contact'
 
 const Home = () => {
 
@@ -45,6 +44,7 @@ const Home = () => {
         } else if (inView4) {
             setActiveItem('Blogs')
         }
+        isChatOpen && setIsChatOpen(false)
     }, [inView1, entry1, inView2, entry2, inView3, entry3, inView4, entry4, section1Ref, section2Ref, section3Ref, section4Ref])
 
     return (
@@ -91,36 +91,10 @@ const Home = () => {
             </section>
             <div className='absolute bottom-0 right-0 m-10 flex flex-col justify-end items-end gap-2'>
                 {isChatOpen &&
-                    <section className='min-h-[200px] w-[400px] border border-grey-4 flex inset-0 bg-opacity-30 backdrop-blur-lg rounded-md'>
-                        <form className='flex-1 p-8'>
-                            <div className="mb-4">
-                                <label htmlFor="name" className="block text-primary-0 text-sm font-bold mb-2">Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    className="w-full border bg-black border-grey-4 rounded-sm focus:outline-none focus:border-primary-0 p-1"
-                                    placeholder="Your Name"
-                                />
-                            </div>
-                            <div className="mb-6">
-                                <label htmlFor="message" className="block text-primary-0 text-sm font-bold mb-2">Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    className="w-full border bg-black border-grey-4 rounded-sm h-32 resize-none focus:outline-none focus:border-primary-0 p-1"
-                                    placeholder="Your Message"
-                                ></textarea>
-                            </div>
-                            <LinkButton classnames='px-0' onClick={() => {
-                                setIsChatOpen(false)
-                            }}
-                                rightIcon={<FiArrowUpRight />}
-                            >
-                                Send
-                            </LinkButton>
-                        </form>
-                    </section>
+                    <Contact
+                        isChatOpen={isChatOpen}
+                        setIsChatOpen={setIsChatOpen}
+                    />
                 }
                 <BsChatTextFill className='text-primary-0 text-6xl h-8 w-8' onClick={
                     () => {

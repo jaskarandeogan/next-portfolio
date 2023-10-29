@@ -78,6 +78,20 @@ module.exports = {
         "body-lg": ["1.125rem", "1.75rem"],
         "body-xl": ["1.5rem", "2.25rem"],
       },
+      animation: {
+        "show-chat-up": "show-chat 0.5s ease-in-out",
+        "show-chat-down": "show-chat 0.5s ease-in-out reverse",
+      },
+      keyframes: {
+        "show-chat": {
+          "0%": { transform: "translateY(100%)" },
+          "100%": { transform: "translateY(0)" },
+        },
+        "hide-chat": {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(100%)" },
+        },
+      },
     },
   },
   plugins: [],
