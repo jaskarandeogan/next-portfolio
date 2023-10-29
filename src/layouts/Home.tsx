@@ -98,7 +98,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <div className='absolute bottom-0 right-0 m-10 flex flex-col justify-end items-end gap-2'>
+            <div className='absolute bottom-0 right-0  m-5 md:m-10 flex flex-col justify-end items-end gap-2'>
                 {isChatOpen &&
                     <Contact
                         isChatOpen={isChatOpen}

@@ -22,6 +22,8 @@ const Contact = ({
     const template : string = process.env.NEXT_PUBLIC_TemplateId || '';
     const user : string = process.env.NEXT_PUBLIC_UserId || '';
 
+    console.log(service, template, user)
+
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
@@ -38,7 +40,7 @@ const Contact = ({
             }, (error) => {
                 console.log(error.text);
             });
-
+            
         setIsFormSubmitted(true)
     }
 
