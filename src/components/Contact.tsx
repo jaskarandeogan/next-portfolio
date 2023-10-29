@@ -63,7 +63,7 @@ const Contact = ({
 
 
     const Form = () => {
-        return <form className={classNames('flex-1 p-8 ', 'animate-show-chat-up')} onSubmit={handleSubmit}>
+        return <form className={classNames('flex-1 p-5 md:p-8 ', 'animate-show-chat-up')} onSubmit={handleSubmit}>
             <div className="mb-4" >
                 <label htmlFor="name" className="block text-primary-0 text-sm font-bold mb-2">Name</label>
                 <input
@@ -107,7 +107,7 @@ const Contact = ({
     }
 
     return (
-        <section className={classNames(' overflow-hidden w-auto md:w-[400px] border border-grey-4 flex inset-0 bg-opacity-60 bg-grey-2 backdrop-blur-3xl rounded-md transition-all duration-500', isChatOpen && 'transition-all')}>
+        <section className={classNames(' overflow-hidden w-[350px] md:w-[400px] border border-grey-4 flex inset-0 bg-opacity-60 bg-grey-2 backdrop-blur-3xl rounded-md transition-all duration-500', isChatOpen && 'transition-all')}>
             < AiOutlineClose className='absolute top-2 right-2 text-grey-5 h-6 w-6 font-bold rounded-sm hover:text-grey-8 transition-all hover:bg-grey-5-32 p-1' onClick={
                 () => {
                     setIsChatOpen(!isChatOpen)
