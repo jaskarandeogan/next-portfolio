@@ -10,6 +10,7 @@ import classNames from "classnames"
 import { useInView } from 'react-intersection-observer';
 import { BsChatTextFill } from 'react-icons/bs'
 import Contact from '@/components/Contact'
+import { LuGitFork } from 'react-icons/lu'
 
 const Home = () => {
 
@@ -83,10 +84,18 @@ const Home = () => {
                     <h1 className={classNames('font-medium text-3xl my-7', activeItem === 'Blogs' && 'text-grey-8 transition-all')}>Blogs</h1>
                     <Blogs isActive={activeItem === 'Blogs' ? true : false} />
                 </div>
-                <div className={classNames('pb-10')}>
-                    <p className={classNames('font-medium')}>
-                        Loosely designed in <span className='text-primary-0'>Figma</span> and coded in Visual Studio Code. built using <span className={classNames('text-secondary-0')}>Next.js</span>  with Tailwind CSS, then deployed on <span className='text-grey-8'>Vercel</span>. The <span className='text-primary-0'>Inter</span> typeface is used for all of the text.
-                    </p>
+                <div className='flex flex-col gap-5'>
+                    <div className={classNames('')}>
+                        <p className={classNames('font-medium')}>
+                            Loosely designed in <span className='text-primary-0'>Figma</span> and coded in Visual Studio Code. built using <span className={classNames('text-secondary-0')}>Next.js</span>  with Tailwind CSS, then deployed on <span className='text-grey-8'>Vercel</span>. The <span className='text-primary-0'>Inter</span> typeface is used for all of the text.
+                        </p>
+                    </div>
+                    <div className={classNames('pb-10')}>
+                        <p className={classNames('font-medium flex gap-1')}>
+                            Interested in <span className='text-grey-8 flex items-center'>forking < LuGitFork /></span> this portfolio? Drop me a message in the chat with your <span className='text-secondary-0'>GitHub </span> info!
+                        </p>
+ 
+                    </div>
                 </div>
             </section>
             <div className='absolute bottom-0 right-0 m-10 flex flex-col justify-end items-end gap-2'>
@@ -96,11 +105,14 @@ const Home = () => {
                         setIsChatOpen={setIsChatOpen}
                     />
                 }
-                <BsChatTextFill className='text-primary-0 text-6xl h-8 w-8' onClick={
-                    () => {
-                        setIsChatOpen(!isChatOpen)
-                    }
-                } />
+                <button>
+                    <BsChatTextFill className='text-primary-0 text-6xl h-8 w-8' onClick={
+                        () => {
+                            setIsChatOpen(!isChatOpen)
+                        }
+                    } />
+                </button>
+                
             </div>
         </section>
     )
