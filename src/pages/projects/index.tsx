@@ -73,8 +73,9 @@ const index = () => {
                         </div>
                     ))}
                 </section>
-                <div className='py-20 flex justify-center'>
+                <div className='flex flex-col justify-center items-center py-20'>
                     <SocialIcons />
+                    <LinkButton classnames='px-0 ml-5 mt-5' onClick={() => window.open("/", "_self")}>Back to Home</LinkButton>
                 </div>
             </section>
         </div>
