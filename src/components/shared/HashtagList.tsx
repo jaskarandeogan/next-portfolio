@@ -21,7 +21,8 @@ const HashtagList: React.FC<HashtagProps> = ({ hashtags }) => {
           }}
           className='transition-all duration-300 ease-in-out cursor-default font-medium mt-1'
         >
-          #{hashtag}, &nbsp;
+          #{hashtag}
+          {index !== hashtags.length - 1 && ', '} &nbsp;
         </span>
       ))}
     </div>

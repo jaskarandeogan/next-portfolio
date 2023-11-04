@@ -93,8 +93,8 @@ const Home = () => {
                         </p>
                     </div>
                     <div className={classNames('pb-10')}>
-                        <p className={classNames('font-medium flex gap-1')}>
-                            Interested in <span className='text-grey-8 flex items-center'>forking < LuGitFork /></span> this portfolio? Drop me a message in the chat with your <span className='text-secondary-0'>GitHub </span> info!
+                        <p className={classNames('font-medium')}>
+                            Interested in <span className='text-grey-8 inline-flex items-center'>forking < LuGitFork /></span> this portfolio? Drop me a message in the chat with your <span className='text-secondary-0'>GitHub </span> info!
                         </p>
 
                     </div>

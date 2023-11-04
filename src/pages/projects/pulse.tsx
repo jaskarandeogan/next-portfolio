@@ -12,8 +12,8 @@ import SocialIcons from '@/components/SocialIcons'
 
 const pulse = ({
     githubLink = "https://github.com",
-    liveLink="https://g-core-cloned.vercel.app/",
-    imagesLinks = ["/projects/garden-1.svg", "/projects/garden-2.svg", "/projects/garden-3.svg", "/projects/garden-4.svg"]
+    liveLink = "https://g-core-cloned.vercel.app/",
+    imagesLinks = ["/projects/garden/garden-1.svg", "/projects/garden/garden-2.svg", "/projects/garden/garden-3.svg", "/projects/garden/garden-4.svg"]
 }) => {
     return (
         <div className=''>
@@ -25,18 +25,18 @@ const pulse = ({
                     >Back</LinkButton>
                 </div>
                 <h2 className='mt-5 text-grey-8 font-semibold'>
-                    Pulse - An OnChain Analysis Tool
+                    HomeChow - Handcrafted meal delivery
                 </h2>
                 <div className='flex mt-10'>
                     <img
-                        src="/projects/garden-featured-image.svg"
+                        src="/projects/garden/garden-featured-image.svg"
                         alt="Garden"
                         className=""
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
                 </div>
                 <div className='flex justify-between items-center'>
-                    <h4 className='font-bold mt-5'>Project Year: <span className='text-primary-0'>2023</span></h4>
+                    <h4 className='font-bold mt-5'>Project Year: <span className='text-primary-0'>2022</span></h4>
                     <div>
                         <div className={classNames('flex', 'items-center', 'gap-4')}>
                             <a href={githubLink} target="_blank" rel="noopener noreferrer">
@@ -57,20 +57,20 @@ const pulse = ({
                 <div className='flex flex-col justify-center'>
                     <h3 className='text-grey-8 text-3xl text-center font-semibold mt-12'>Mockups</h3>
                     <div className='flex flex-col justify-center'>
-                        <img src="/projects/Macbook.svg" alt="" className='-my-[80px] hover:scale-105 transition-all' />
+                        <img src="/projects/garden/Macbook.svg" alt="" className='-my-[80px] hover:scale-105 transition-all  duration-500' />
                         <h4 className='text-center font-semibold text-lg mt-5 md:mt-3'>
                             Macbook Mockup
                         </h4>
                     </div>
                     <div className='flex justify-center items-center gap-5 mt-12'>
                         <div>
-                            <img src="/projects/Ipad.svg" alt="" className='-my-[60px] hover:scale-105 transition-all' />
+                            <img src="/projects/garden/Ipad.svg" alt="" className='-my-[60px] hover:scale-105 transition-all  duration-500' />
                             <h4 className='text-center font-semibold text-lg  mt-8 md:mt-3'>
                                 Ipad Mockup
                             </h4>
                         </div>
                         <div>
-                            <img src="/projects/Iphone.svg" alt="" className='-my-[60px] hover:scale-105 transition-all' />
+                            <img src="/projects/garden/Iphone.svg" alt="" className='-my-[60px] hover:scale-105 transition-all  duration-500' />
                             <h4 className='text-center font-semibold text-lg mt-8 md:mt-3'>
                                 Iphone Mockup
                             </h4>
@@ -97,8 +97,12 @@ const pulse = ({
                     Additionally, the application prioritized seamless data loading with minimal latency, while incorporating user-friendly UX designs implemented in React and enhanced with the efficiency of Tailwind CSS. Additionally, Application has been developed using React as a frontend framework Tailwind CSS as a CSS framework, NodeJS as a backend service, and AWS as a hosting service.
                 </p>
                 <div className='flex justify-between items-center mt-20'>
-                    <LinkButton leftIcon={<FiArrowUpLeft />} classnames='px-0'> Previous</LinkButton>
-                    <LinkButton rightIcon={<FiArrowUpRight />} classnames='px-0'> Next</LinkButton>
+                    <LinkButton leftIcon={<FiArrowUpLeft />} classnames='px-0' onClick={() => {
+                        window.open("/projects/homechow", "_self")
+                    }}> Previous</LinkButton>
+                    <LinkButton rightIcon={<FiArrowUpRight />} classnames='px-0' onClick={() => {
+                        window.open("/projects/homechow", "_self")
+                    }}> Next</LinkButton>
                 </div>
                 <div className='flex flex-col justify-center items-center py-20'>
                     <SocialIcons />
