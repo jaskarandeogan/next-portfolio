@@ -10,9 +10,9 @@ import classNames from 'classnames'
 import HashtagList from '@/components/shared/HashtagList'
 import SocialIcons from '@/components/SocialIcons'
 
-const project = ({
+const pulse = ({
     githubLink = "https://github.com",
-    liveLink = "https://github.com",
+    liveLink="https://g-core-cloned.vercel.app/",
     imagesLinks = ["/projects/garden-1.svg", "/projects/garden-2.svg", "/projects/garden-3.svg", "/projects/garden-4.svg"]
 }) => {
     return (
@@ -20,7 +20,9 @@ const project = ({
             <Header />
             <div className='mx-auto max-w-2xl lg:max-w-5xl px-4'>
                 <div className='mt-[5rem]'>
-                    <LinkButton leftIcon={<FiArrowUpLeft />} classnames='px-0'> Back to Home</LinkButton>
+                    <LinkButton leftIcon={<FiArrowUpLeft />} classnames='px-0'
+                        onClick={() => window.open("/projects", "_self")}
+                    >Back</LinkButton>
                 </div>
                 <h2 className='mt-5 text-grey-8 font-semibold'>
                     Pulse - An OnChain Analysis Tool
@@ -55,20 +57,20 @@ const project = ({
                 <div className='flex flex-col justify-center'>
                     <h3 className='text-grey-8 text-3xl text-center font-semibold mt-12'>Mockups</h3>
                     <div className='flex flex-col justify-center'>
-                        <img src="/projects/Macbook.svg" alt="" className='-my-[60px] ' />
-                        <h4 className='text-center font-semibold text-lg mt-8 md:mt-3'>
+                        <img src="/projects/Macbook.svg" alt="" className='-my-[80px] hover:scale-105 transition-all' />
+                        <h4 className='text-center font-semibold text-lg mt-5 md:mt-3'>
                             Macbook Mockup
                         </h4>
                     </div>
                     <div className='flex justify-center items-center gap-5 mt-12'>
                         <div>
-                            <img src="/projects/Ipad.svg" alt="" className='-my-[60px] ' />
+                            <img src="/projects/Ipad.svg" alt="" className='-my-[60px] hover:scale-105 transition-all' />
                             <h4 className='text-center font-semibold text-lg  mt-8 md:mt-3'>
                                 Ipad Mockup
                             </h4>
                         </div>
                         <div>
-                            <img src="/projects/Iphone.svg" alt="" className='-my-[60px] ' />
+                            <img src="/projects/Iphone.svg" alt="" className='-my-[60px] hover:scale-105 transition-all' />
                             <h4 className='text-center font-semibold text-lg mt-8 md:mt-3'>
                                 Iphone Mockup
                             </h4>
@@ -98,12 +100,13 @@ const project = ({
                     <LinkButton leftIcon={<FiArrowUpLeft />} classnames='px-0'> Previous</LinkButton>
                     <LinkButton rightIcon={<FiArrowUpRight />} classnames='px-0'> Next</LinkButton>
                 </div>
-                <div className='flex justify-center items-center mt-5'>
+                <div className='flex flex-col justify-center items-center py-20'>
                     <SocialIcons />
+                    <LinkButton classnames='px-0 ml-5 mt-5' onClick={() => window.open("/", "_self")}>Back to Home</LinkButton>
                 </div>
             </div>
         </div>
     )
 }
 
-export default project
+export default pulse
