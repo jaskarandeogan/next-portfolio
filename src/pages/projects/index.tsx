@@ -16,7 +16,15 @@ const index = () => {
             isComingSoon: false
         },
         {
-            year: 2021,
+            year: 2023,
+            title: 'Homechow',
+            madeAt: 'Homechow',
+            technologies: ['NextJS', 'TypeScript', 'Firebase', 'Mapbox', 'TailwindCSS', 'Storybook', 'Cypress', 'Netlify'],
+            link: '/projects/homechow',
+            isComingSoon: false
+        },
+        {
+            year: 2024,
             title: 'Payfelix - Remastered',
             madeAt: 'Felix Payment Systems',
             technologies: ['Wordpress', 'Elementor', 'Namecheap', 'GSAP', 'Zoho'],
@@ -24,15 +32,7 @@ const index = () => {
             isComingSoon: true
         },
         {
-            year: 2023,
-            title: 'Homechow',
-            madeAt: 'Homechow',
-            technologies: ['NextJS', 'TypeScript', 'Firebase', 'Mapbox', 'TailwindCSS', 'Storybook', 'Cypress', 'Netlify'],
-            link: 'https://home-chow-cloned-6gcsivk52-jaskarandeogan.vercel.app/login',
-            isComingSoon: true
-        },
-        {
-            year: 2024,
+            year: 2021,
             title: 'AI Designs',
             madeAt: 'Freelance',
             technologies: ['Wordpress', 'Gutanberg', 'Hostinger', 'Elementor', 'SEO'],
