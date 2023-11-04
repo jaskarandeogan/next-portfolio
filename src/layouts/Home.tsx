@@ -11,6 +11,8 @@ import { useInView } from 'react-intersection-observer';
 import { BsChatTextFill } from 'react-icons/bs'
 import Contact from '@/components/Contact'
 import { LuGitFork } from 'react-icons/lu'
+import Link from 'next/link'
+import LinkButton from '@/components/shared/LinkButton'
 
 const Home = () => {
 
@@ -94,11 +96,15 @@ const Home = () => {
                         <p className={classNames('font-medium flex gap-1')}>
                             Interested in <span className='text-grey-8 flex items-center'>forking < LuGitFork /></span> this portfolio? Drop me a message in the chat with your <span className='text-secondary-0'>GitHub </span> info!
                         </p>
- 
+
                     </div>
                 </div>
             </section>
-            <div className='absolute bottom-0 right-0  m-5 md:m-10 flex flex-col justify-end items-end gap-2'>
+            <div className='absolute bottom-0 right-0  m-5 md:m-10 flex justify-end items-center gap-8'>
+                <div className='relative'>
+                    <LinkButton classnames='px-0' onClick={() => window.open("/comingsoon", "_blank")}>Journey</LinkButton>
+                    <span className='text-grey-5 absolute -top-4 right-0 -translate-x-[100%] animate-bounce'>soon!</span>
+                </div>
                 {isChatOpen &&
                     <Contact
                         isChatOpen={isChatOpen}
@@ -112,7 +118,7 @@ const Home = () => {
                         }
                     } />
                 </button>
-                
+
             </div>
         </section>
     )

@@ -15,8 +15,8 @@ const LinkButton: React.FC<LinkButtonProps> = ({ leftIcon, rightIcon, children, 
     type = 'button'
 }) => {
     return (
-        <button className={classNames("group font-medium py-2 px-4 rounded flex items-center",
-            'text-primary-0', 'transition-all', classnames
+        <button className={classNames("group font-medium py-2  rounded flex items-center",
+            'text-primary-0', 'transition-all', classnames ? classnames : 'px-4'
         )}
             onClick={onClick}
             type={type}

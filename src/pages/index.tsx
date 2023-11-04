@@ -10,7 +10,7 @@ export default function Index() {
   useEffect(() => {
     setTimeout(() => {
     setLoading(false);
-    }, 2500);
+    }, 1500);
   }, []);
 
   if (loading) {

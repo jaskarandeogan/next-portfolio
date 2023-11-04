@@ -87,7 +87,7 @@ const ProjectCard = ({
                             <LinkButton
                                 rightIcon={<MdArrowOutward />}
                                 onClick={() => {
-                                    window.open(projectBlogLink, '_blank')
+                                    window.open(projectBlogLink, '_self')
                                 }}
                             >
                                 Read More
@@ -99,7 +99,7 @@ const ProjectCard = ({
                     <LinkButton
                         rightIcon={<MdArrowOutward />}
                         onClick={() => {
-                            window.open(projectBlogLink, '_blank')
+                            window.open(projectBlogLink, '_self')
                         }}
                     >
                         Read More
