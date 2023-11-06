@@ -57,7 +57,7 @@ const payfelix = ({
                     <h3 className='text-grey-8 text-3xl text-center font-semibold mt-12'>Mockups</h3>
                     <div className='flex flex-col justify-center'>
                         <img src="/projects/coming-soon/Macbook.svg" alt="" className='-my-[80px] scale-90 hover:scale-95 transition-all  duration-500' />
-                        <h4 className='text-center font-semibold text-lg mt-5 md:mt-3'>
+                        <h4 className='text-center font-semibold text-lg mt-10 md:mt-3'>
                             Macbook Mockup
                         </h4>
                     </div>
@@ -105,7 +105,7 @@ const payfelix = ({
                 </div>
                 <div className='flex flex-col justify-center items-center py-20'>
                     <SocialIcons />
-                    <LinkButton classnames='px-0 ml-5 mt-5' onClick={() => window.open("/", "_self")}>Back to Home</LinkButton>
+                    <LinkButton classnames='px-0 ml-5 mt-10' onClick={() => window.open("/", "_self")}>Back to Home</LinkButton>
                 </div>
             </div>
         </div>

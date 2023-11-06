@@ -32,7 +32,7 @@ const index = () => {
             isComingSoon: true
         },
         {
-            year: 2023,
+            year: 2022,
             title: 'Splink',
             madeAt: 'Langara College - Capstone Project',
             technologies: ['React Native', 'NodeJS', 'Native Base', 'Google Vision API', 'AWS', 'MongoDB', 'CICD'],
