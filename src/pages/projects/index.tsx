@@ -73,9 +73,9 @@ const index = () => {
                                     <Chips technologies={project.technologies} />
                                 </div>
                                 <div className='flex justify-end'>
-                                    <LinkButton classnames={'px-0'} onClick={() => window.open(project.link, "_self")} rightIcon={
+                                    <LinkButton classnames={'px-0 text-xs'} onClick={() => window.open(project.link, "_self")} rightIcon={
                                         <FiArrowUpRight />
-                                    }>View Project</LinkButton>
+                                    }>View</LinkButton>
                                 </div>
                             </div>
                         </div>
