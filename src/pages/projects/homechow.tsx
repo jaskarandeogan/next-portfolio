@@ -57,7 +57,7 @@ const pulse = ({
                     <h3 className='text-grey-8 text-3xl text-center font-semibold mt-12'>Mockups</h3>
                     <div className='flex flex-col justify-center'>
                         <img src="/projects/homechow/Macbook-h.svg" alt="" className='-my-[80px] hover:scale-105 transition-all  duration-500' />
-                        <h4 className='text-center font-semibold text-lg mt-5 md:mt-3'>
+                        <h4 className='text-center font-semibold text-lg mt-10 md:mt-3'>
                             Macbook Mockup
                         </h4>
                     </div>
@@ -95,7 +95,7 @@ const pulse = ({
                     Additionally, the application prioritized seamless data loading with minimal latency, while incorporating user-friendly UX designs implemented in NextJS and enhanced with the efficiency of Tailwind CSS.                </p>
                 <div className='flex justify-between items-center mt-20'>
                     <LinkButton leftIcon={<FiArrowUpLeft />} classnames='px-0' onClick={() => {
-                        window.open("/projects/pulse", "_self")
+                        window.open("/projects/payfelix", "_self")
                     }}> Previous</LinkButton>
                     <LinkButton rightIcon={<FiArrowUpRight />} classnames='px-0' onClick={() => {
                         window.open("/projects/pulse", "_self")

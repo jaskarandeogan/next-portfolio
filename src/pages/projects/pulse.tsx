@@ -58,7 +58,7 @@ const pulse = ({
                     <h3 className='text-grey-8 text-3xl text-center font-semibold mt-12'>Mockups</h3>
                     <div className='flex flex-col justify-center'>
                         <img src="/projects/garden/Macbook.svg" alt="" className='-my-[80px] hover:scale-105 transition-all  duration-500' />
-                        <h4 className='text-center font-semibold text-lg mt-5 md:mt-3'>
+                        <h4 className='text-center font-semibold text-lg mt-10 md:mt-3'>
                             Macbook Mockup
                         </h4>
                     </div>
@@ -101,7 +101,7 @@ const pulse = ({
                         window.open("/projects/homechow", "_self")
                     }}> Previous</LinkButton>
                     <LinkButton rightIcon={<FiArrowUpRight />} classnames='px-0' onClick={() => {
-                        window.open("/projects/homechow", "_self")
+                        window.open("/projects/payfelix", "_self")
                     }}> Next</LinkButton>
                 </div>
                 <div className='flex flex-col justify-center items-center py-20'>

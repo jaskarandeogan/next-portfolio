@@ -28,7 +28,15 @@ const index = () => {
             title: 'Payfelix - Remastered',
             madeAt: 'Felix Payment Systems',
             technologies: ['Wordpress', 'Elementor', 'Namecheap', 'GSAP', 'Zoho'],
-            link: 'https://dev.softpos.cloud/staging/',
+            link: '/projects/payfelix',
+            isComingSoon: true
+        },
+        {
+            year: 2022,
+            title: 'Splink',
+            madeAt: 'Langara College - Capstone Project',
+            technologies: ['React Native', 'NodeJS', 'Native Base', 'Google Vision API', 'AWS', 'MongoDB', 'CICD'],
+            link: '/comingsoon',
             isComingSoon: true
         },
         {
@@ -65,9 +73,9 @@ const index = () => {
                                     <Chips technologies={project.technologies} />
                                 </div>
                                 <div className='flex justify-end'>
-                                    <LinkButton classnames={'px-0'} onClick={() => window.open(project.link, "_self")} rightIcon={
+                                    <LinkButton classnames={'px-0 text-xs'} onClick={() => window.open(project.link, "_self")} rightIcon={
                                         <FiArrowUpRight />
-                                    }>View Project</LinkButton>
+                                    }>View</LinkButton>
                                 </div>
                             </div>
                         </div>
