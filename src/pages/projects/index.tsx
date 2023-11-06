@@ -28,7 +28,15 @@ const index = () => {
             title: 'Payfelix - Remastered',
             madeAt: 'Felix Payment Systems',
             technologies: ['Wordpress', 'Elementor', 'Namecheap', 'GSAP', 'Zoho'],
-            link: 'https://dev.softpos.cloud/staging/',
+            link: '/projects/payfelix',
+            isComingSoon: true
+        },
+        {
+            year: 2023,
+            title: 'Splink',
+            madeAt: 'Langara College - Capstone Project',
+            technologies: ['React Native', 'NodeJS', 'Native Base', 'Google Vision API', 'AWS', 'MongoDB', 'CICD'],
+            link: '/comingsoon',
             isComingSoon: true
         },
         {
