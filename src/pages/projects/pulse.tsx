@@ -25,7 +25,7 @@ const pulse = ({
                     >Back</LinkButton>
                 </div>
                 <h2 className='mt-5 text-grey-8 font-semibold'>
-                    HomeChow - Handcrafted meal delivery
+                    Pulse - An OnChain Analysis Tool
                 </h2>
                 <div className='flex mt-10'>
                     <img
