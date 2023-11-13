@@ -10,6 +10,17 @@ const Experience = ({ isActive }: {
   return (
     <section className='flex flex-col gap-10'>
       <ProjectCard
+        title="Splink"
+        description="Splink, a mobile application developed over a focused 12-week period, is reshaping the shopping landscape. This project goes beyond mere transactions; it's about connecting people, saving money, and making a positive impact in our communities."
+        technologies={['React Native', 'NodeJS', 'Google Vision API', 'AWS', 'MongoDB', 'CICD']}
+        githubLink="https://github.com/jaskarandeogan"
+        liveLink="/projects/splink"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/splink-thumbnail.png?alt=media&token=83b2d8b4-3c54-488a-951a-de7a4db0eff6"
+        caption="Splink"
+        projectBlogLink="/projects/splink"
+        isNew={true}
+      />
+      <ProjectCard
         title="Garden - Pulse"
         description="Introducing Pulse - the ultimate blockchain transaction insights application for the savvy cryptocurrency investor! With Pulse, you'll have access to real-time analytical information that can be turned into profit in the crypto market. Our cutting-edge technology is designed to provide you with invaluable insights on blockchain transactions, helping you stay ahead of the game in the fast-paced world of cryptocurrency. Whether you're a seasoned investor or just starting out, Pulse is your key to unlocking the full potential of cryptocurrency. Download Pulse today and start turning insights into revenue! #BlockchainInsights #CryptoInvesting #RealTimeAnalytics."
         technologies={["React", "NodeJS", "TailwindCSS", "AWS", "Stytch", "PostgreSQL", "CICD"]}

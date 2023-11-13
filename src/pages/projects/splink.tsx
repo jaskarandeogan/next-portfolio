@@ -3,12 +3,14 @@ import React from 'react'
 import SplinkHeader from '@/components/shared/SplinkHeader'
 import LinkButton from '@/components/shared/LinkButton'
 import { FiArrowUpLeft, FiArrowUpRight } from 'react-icons/fi'
-import Image from 'next/image'
 import { FaGithub } from 'react-icons/fa'
 import { SlGlobe } from 'react-icons/sl'
 import classNames from 'classnames'
 import HashtagList from '@/components/shared/HashtagList'
+import dynamic from 'next/dynamic'
 import SocialIcons from '@/components/SocialIcons'
+
+const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const payfelix = ({
     githubLink = "https://github.com/jaskarandeogan",
@@ -24,9 +26,6 @@ const payfelix = ({
                         onClick={() => window.open("/projects", "_self")}
                     >Back</LinkButton>
                 </div>
-                {/* <h2 className='mt-5 text-splink-secondary font-semibold'>
-                    Splink
-                </h2> */}
                 <div className='flex mt-10'>
                     <img
                         src="/projects/splink/cover.svg"
@@ -49,18 +48,24 @@ const payfelix = ({
                     </div>
                 </div>
                 <div>
-                    <HashtagList hashtags={['React Native', 'NodeJS', 'Native Base', 'Google Vision API', 'AWS', 'MongoDB', 'CICD']}
+                    <HashtagList hashtags={['React Native', 'NodeJS', 'Google Vision API', 'AWS', 'MongoDB', 'CICD']}
                         colors={["#26DCD0", "#D30079", "#7575EA", "#97F36B", 'text-grey-2']}
                     />
                 </div>
                 <p className='mt-10 font-medium'>
                     Splink, a revolutionary mobile application developed over a focused 12-week period, is reshaping the shopping landscape. This project goes beyond mere transactions; it&apos;s about connecting people, saving money, and making a positive impact in our communities.
                 </p>
-
                 <h3 className='mt-10 text-splink-secondary font-semibold'>Genesis of Splink</h3>
                 <p className='mt-1 font-medium'>
                     Splink connects like-minded individuals for bulk purchases, merging collective buying power with social interaction. It&apos;s more than just a shopping app; it&apos;s a platform fostering shared interests and community.
                 </p>
+                <div className='hidden md:block'>
+                    <ReactPlayer url='https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Splink_Short%20Video_FINAL.mp4?alt=media&token=f226a25c-f10d-4224-9d57-113ec1520b6e' controls={true} className='rounded-md shadow-md mt-5 m-auto w-full'
+                    />
+                    <p className='italic text-sm text-center mt-4'>
+                        caption: video that my team created for our pitch
+                    </p>
+                </div>
                 <h3 className='mt-10 text-splink-secondary font-semibold'>Key Features</h3>
                 <div className='flex flex-col gap-8 mt-5'>
                     <section className='flex flex-col-reverse md:flex-row gap-5'>
@@ -71,7 +76,7 @@ const payfelix = ({
                             </p>
                         </div>
                         <div className='max-w-fit md:flex-1'>
-                            <img src="/projects/splink/social-shopping.svg" alt="" className='rounded-md shadow-md' />
+                            <img src="/projects/splink/social-shopping.svg" alt="" className='rounded-md shadow-md hover:scale-105 transition-all  duration-500' />
                             <p className='italic text-sm text-center mt-4'>
                                 caption: select your friends to shop with
                             </p>
@@ -85,7 +90,7 @@ const payfelix = ({
                             </p>
                         </div>
                         <div className='max-w-fit md:flex-1'>
-                            <img src="/projects/splink/bill-scanning.svg" alt="" className='rounded-md shadow-md' />
+                            <img src="/projects/splink/bill-scanning.svg" alt="" className='rounded-md shadow-md hover:scale-105 transition-all  duration-500' />
                             <p className='italic text-sm text-center mt-4'>
                                 caption: scan your bill and let splink do the rest
                             </p>
@@ -99,7 +104,7 @@ const payfelix = ({
                             </p>
                         </div>
                         <div className='max-w-fit md:flex-1'>
-                            <img src="/projects/splink/group-balance.svg" alt="" className='rounded-md shadow-md' />
+                            <img src="/projects/splink/group-balance.svg" alt="" className='rounded-md shadow-md hover:scale-105 transition-all  duration-500' />
                             <p className='italic text-sm text-center mt-4'>
                                 caption: see your group balance in real-time
                             </p>
@@ -125,6 +130,9 @@ const payfelix = ({
                         Splink isn&apos;t merely a product; it&apos;s a lesson in innovation and adaptability. It has taught me the power of collaboration and the potential for technology to create positive change.
                     </p>
                 </div>
+                <p className='mt-5 font-medium'>
+                    Note: Splink is not yet available on the App Store or Google Play Store. If you&apos;d like to learn more about Splink, feel free to text me at <a className='text-splink-primary' href='https://jaskaran.pro'>homepage chat</a>, I can go over how the app works and show you a demo.
+                </p>
                 <div className='flex justify-between items-center mt-20'>
                     <LinkButton leftIcon={<FiArrowUpLeft />} classnames='px-0 text-splink-primary' onClick={() => {
                         window.open("/projects/pulse", "_self")
@@ -134,7 +142,7 @@ const payfelix = ({
                     }}> Next</LinkButton>
                 </div>
                 <div className='flex flex-col justify-center items-center py-20'>
-                    <SocialIcons 
+                    <SocialIcons
                         variant='splink'
                     />
                     <LinkButton classnames='px-0 ml-5 mt-10 text-splink-primary' onClick={() => window.open("/", "_self")}>Back to Home</LinkButton>

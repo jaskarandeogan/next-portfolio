@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ['latin'] })
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={inter.className}>
-      {/* <AnimatedCursor 
+      <AnimatedCursor 
         color='151, 243, 107'
         trailingSpeed={12}
         
-      /> */}
+      />
       <Component {...pageProps} />
     </main>
   )
