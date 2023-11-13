@@ -4,7 +4,9 @@ import { AiOutlineTwitter } from 'react-icons/ai'
 import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 
 
-const SocialIcons = () => {
+const SocialIcons = ({
+    variant = 'primary' || 'splink'
+}) => {
     return (
         <section className={classNames('flex', 'gap-8', 'items-center', 'justify-center', 'md:justify-start')}>
             <button
@@ -12,7 +14,9 @@ const SocialIcons = () => {
                     window.open('https://twitter.com/DeoganJaskaran')
                 }}
             >
-                <AiOutlineTwitter className={classNames('h-9 w-9 text-primary-0 hover:-translate-y-1 transition-all')}
+                <AiOutlineTwitter className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
+                    variant === 'splink' ? 'text-splink-secondary' : 'text-primary-0'
+                )}
                 />
 
             </button>
@@ -23,7 +27,9 @@ const SocialIcons = () => {
                     }
                 }
             >
-                <FaLinkedinIn className={classNames('h-9 w-9 text-primary-0 hover:-translate-y-1 transition-all')}
+                <FaLinkedinIn className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
+                    variant === 'splink' ? 'text-splink-secondary' : 'text-primary-0'
+                )}
                 />
             </button>
             <button
@@ -33,7 +39,9 @@ const SocialIcons = () => {
                     }
                 }
             >
-                <FaInstagram className={classNames('h-9 w-9 text-primary-0 hover:-translate-y-1 transition-all')}
+                <FaInstagram className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
+                    variant === 'splink' ? 'text-splink-secondary' : 'text-primary-0'
+                )}
                 />
             </button>
             <button
@@ -43,7 +51,9 @@ const SocialIcons = () => {
                     }
                 }
             >
-                <FaGithub className={classNames('h-9 w-9 text-primary-0 hover:-translate-y-1 transition-all')}
+                <FaGithub className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
+                    variant === 'splink' ? 'text-splink-secondary' : 'text-primary-0'
+                )}
                 />
             </button>
         </section>

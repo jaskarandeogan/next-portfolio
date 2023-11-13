@@ -100,11 +100,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <div className='absolute bottom-0 right-0  m-5 md:m-10 flex justify-end items-center gap-8'>
-                <div className='relative'>
-                    <LinkButton classnames='px-0' onClick={() => window.open("/comingsoon", "_blank")}>Journey</LinkButton>
-                    <span className='text-grey-5 absolute -top-4 right-0 -translate-x-[100%] animate-bounce'>soon!</span>
-                </div>
+            <div className='absolute bottom-0 right-0  m-5 md:m-10 flex justify-end items-end gap-8'>
                 {isChatOpen &&
                     <Contact
                         isChatOpen={isChatOpen}

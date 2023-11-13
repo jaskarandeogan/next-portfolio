@@ -9,11 +9,27 @@ const index = () => {
     const projects = [
         {
             year: 2022,
+            title: 'Splink',
+            madeAt: 'Langara College - Capstone Project',
+            technologies: ['React Native', 'NodeJS', 'Native Base', 'Google Vision API', 'AWS', 'MongoDB', 'CICD'],
+            link: '/projects/splink',
+            isComingSoon: false
+        },
+        {
+            year: 2022,
             title: 'Pulse',
             madeAt: 'Garden',
             technologies: ['React', 'NodeJS', 'TailwindCSS', 'AWS', 'Stytch', 'PostgreSQL', 'CICD'],
             link: '/projects/pulse',
             isComingSoon: false
+        },
+        {
+            year: 2024,
+            title: 'Payfelix - Remastered',
+            madeAt: 'Felix Payment Systems',
+            technologies: ['Wordpress', 'Elementor', 'GSAP'],
+            link: '/projects/payfelix',
+            isComingSoon: true
         },
         {
             year: 2023,
@@ -22,22 +38,6 @@ const index = () => {
             technologies: ['NextJS', 'TypeScript', 'Firebase', 'Mapbox', 'TailwindCSS', 'Storybook', 'Cypress', 'Netlify'],
             link: '/projects/homechow',
             isComingSoon: false
-        },
-        {
-            year: 2024,
-            title: 'Payfelix - Remastered',
-            madeAt: 'Felix Payment Systems',
-            technologies: ['Wordpress', 'Elementor', 'Namecheap', 'GSAP', 'Zoho'],
-            link: '/projects/payfelix',
-            isComingSoon: true
-        },
-        {
-            year: 2022,
-            title: 'Splink',
-            madeAt: 'Langara College - Capstone Project',
-            technologies: ['React Native', 'NodeJS', 'Native Base', 'Google Vision API', 'AWS', 'MongoDB', 'CICD'],
-            link: '/comingsoon',
-            isComingSoon: true
         },
         {
             year: 2021,
