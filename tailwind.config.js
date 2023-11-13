@@ -59,7 +59,9 @@ module.exports = {
         'error-3': '#3E080F',
         'error-4': '#EB6878',
         'error-5': '#F19BA5',
-        'error-6': '#F8CDD2'
+        'error-6': '#F8CDD2',
+        'splink-primary': '#7575EA',
+        'splink-secondary': '#45D8BC',
       },
       fontFamily: {
         heading: ["Inter"],

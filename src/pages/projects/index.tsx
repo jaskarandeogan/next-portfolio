@@ -36,8 +36,8 @@ const index = () => {
             title: 'Splink',
             madeAt: 'Langara College - Capstone Project',
             technologies: ['React Native', 'NodeJS', 'Native Base', 'Google Vision API', 'AWS', 'MongoDB', 'CICD'],
-            link: '/comingsoon',
-            isComingSoon: true
+            link: '/projects/splink',
+            isComingSoon: false
         },
         {
             year: 2021,
