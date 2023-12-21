@@ -47,8 +47,8 @@ const ProjectCard = ({
             'xl:flex-row',
             'gap-5',
             'xl:gap-10',
-            'px-6',
-            'py-6',
+            'px-4',
+            'py-4',
             'group'
         )}>
             <div className={classNames('min-w-fit flex flex-col gap-2 items-center')}>
@@ -60,7 +60,7 @@ const ProjectCard = ({
                     className='object-cover rounded-sm  hidden xl:block'
                     loading='eager'
                 />
-                <span className='italic text-center'>{caption}</span>
+                <span className='italic text-center hidden xl:block'>{caption}</span>
             </div>
             <div className='flex flex-col gap-4'>
                 <a href={projectBlogLink}>

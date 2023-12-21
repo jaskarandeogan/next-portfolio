@@ -26,8 +26,8 @@ const BlogsCard = ({
             'md:flex-row',
             'gap-5',
             'md:gap-10',
-            'px-6',
-            'py-6',
+            'px-4',
+            'py-4',
             'group'
         )}>
             <div className={classNames('flex min-w-fit')}>
