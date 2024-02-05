@@ -62,6 +62,11 @@ module.exports = {
         'error-6': '#F8CDD2',
         'splink-primary': '#7575EA',
         'splink-secondary': '#45D8BC',
+        'felix-primary': '#D91B5C',
+        'felix-secondary': '#1A99D6',
+        'felix-tertiary': '#00558F',
+        'felix-bold-text': '#000000',
+        'felix-light-text': '#515151',
       },
       fontFamily: {
         heading: ["Inter"],
