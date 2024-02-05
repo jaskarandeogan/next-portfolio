@@ -12,12 +12,13 @@ const Experience = ({ isActive }: {
       <ProjectCard
         title="Payfelix - Remastered"
         description="Payfelix is the future of payment acceptance. Integrate NFC payments in your app quickly and securely without proprietary card readers, compliance burden or unnecessary go-to-market costs."
-        technologies={["Wordpress", "Elementor", "Namecheap", "GSAP", "Zoho"]}
+        technologies={["Wordpress", "Elementor", "Namecheap", "Analytics", "Zoho", ]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://dev.softpos.cloud/staging/"
         image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Payfelix.jpg?alt=media&token=33f30d76-99a1-4c4b-a74f-39471b3682f3&_gl=1*1ky5gq4*_ga*NzU2NzY3NjI5LjE2ODY1MzQ5MDI.*_ga_CW55HF8NVT*MTY5Nzk2NjAzNC40LjEuMTY5Nzk2NjM2MS4xNC4wLjA."
         caption="Payfelix"
         projectBlogLink="/projects/payfelix"
+        isNew={true}
       />
       <ProjectCard
         title="Splink"

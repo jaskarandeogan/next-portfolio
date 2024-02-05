@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 
 
 const SocialIcons = ({
-    variant = 'primary' || 'splink'
+    variant = 'primary' || 'splink' || 'felix'
 }) => {
     return (
         <section className={classNames('flex', 'gap-8', 'items-center', 'justify-center', 'md:justify-start')}>
@@ -15,7 +15,9 @@ const SocialIcons = ({
                 }}
             >
                 <AiOutlineTwitter className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
-                    variant === 'splink' ? 'text-splink-secondary' : 'text-primary-0'
+                    variant === "primary" && 'text-primary-0',
+                    variant === 'splink' && 'text-splink-secondary',
+                    variant === 'felix' && 'text-felix-primary'
                 )}
                 />
 
@@ -28,7 +30,9 @@ const SocialIcons = ({
                 }
             >
                 <FaLinkedinIn className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
-                    variant === 'splink' ? 'text-splink-secondary' : 'text-primary-0'
+                    variant === "primary" && 'text-primary-0',
+                    variant === 'splink' && 'text-splink-secondary',
+                    variant === 'felix' && 'text-felix-primary'
                 )}
                 />
             </button>
@@ -40,7 +44,9 @@ const SocialIcons = ({
                 }
             >
                 <FaInstagram className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
-                    variant === 'splink' ? 'text-splink-secondary' : 'text-primary-0'
+                    variant === "primary" && 'text-primary-0',
+                    variant === 'splink' && 'text-splink-secondary',
+                    variant === 'felix' && 'text-felix-primary'
                 )}
                 />
             </button>
@@ -52,7 +58,9 @@ const SocialIcons = ({
                 }
             >
                 <FaGithub className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
-                    variant === 'splink' ? 'text-splink-secondary' : 'text-primary-0'
+                    variant === "primary" && 'text-primary-0',
+                    variant === 'splink' && 'text-splink-secondary',
+                    variant === 'felix' && 'text-felix-primary'
                 )}
                 />
             </button>
