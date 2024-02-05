@@ -1,18 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import FelixHeader from '@/components/shared/FelixHeader'
-import LinkButton from '@/components/shared/LinkButton'
+import LinkButton from '@/components/shared/LinkButton2'
 import { FiArrowUpLeft, FiArrowUpRight } from 'react-icons/fi'
 import { FaGithub } from 'react-icons/fa'
 import { SlGlobe } from 'react-icons/sl'
 import { MdOutlinePhoneIphone } from "react-icons/md";
 import classNames from 'classnames'
 import HashtagList from '@/components/shared/HashtagList'
-import dynamic from 'next/dynamic'
 import SocialIcons from '@/components/SocialIcons'
 import Image from 'next/image'
-
-const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
 
 const payfelix = ({
     githubLink = "https://github.com/jaskarandeogan",
