@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         trailingSpeed={12}
         
       />
-      <GoogleTagManager gtmId="G-H2JY9SK2FK " />
+      <GoogleTagManager gtmId="GTM-TFS4NJLW" />
       <Component {...pageProps} />
     </main>
   )
