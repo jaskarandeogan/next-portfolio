@@ -2,7 +2,6 @@ import Home from "@/layouts/Home";
 import { useState, useEffect } from "react";
 import { HashLoader } from "react-spinners";
 
-
 export default function Index() {
   
   const [loading, setLoading] = useState(true);
