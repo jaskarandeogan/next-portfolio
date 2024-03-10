@@ -14,7 +14,7 @@ import Link from 'next/link'
 
 const payfelix = ({
     githubLink = "https://github.com/jaskarandeogan",
-    liveLink = "#",
+    liveLink = "https://payfelix.com",
     imagesLinks = ["/projects/coming-soon/thumbnail-comingsoon.svg", "/projects/coming-soon/thumbnail-comingsoon.svg", "/projects/coming-soon/thumbnail-comingsoon.svg", "/projects/coming-soon/thumbnail-comingsoon.svg"]
 }) => {
     return (
@@ -150,7 +150,7 @@ const payfelix = ({
                         Working on this web application was a new journey for me. I dived into the world of WordPress CMS and got my hands on the Elementor framework to put together dynamic pages. It was a bit of a learning curve, trying to build a site that was not only fully manageable through a CMS but also had that modern, interactive feel to it. Elementor was a game changer, really. It came with so many built-in components, but the cool part was that I could also get creative and slot in my own HTML and JavaScript into these widget containers. And the cherry on top? WordPress is so open to third-party integrations. That made a huge difference. Reflecting on it all, this project stretched my skills and made me see just how powerful and flexible these tools can be in the right hands.
                     </p>
                     <p className='font-medium md:text-center mt-10'>
-                        Thanks for reading! Please feel free to visit the <Link href={'https://dev.softpos.cloud'} className='text-felix-primary font-bold'>live site.</Link>
+                        Thanks for reading! Please feel free to visit the <Link target="_blank" rel="noopener noreferrer" href={'https://payfelix.com'} className='text-felix-primary font-bold'>live site.</Link>
                     </p>
                 </section>
 
