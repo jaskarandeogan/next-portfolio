@@ -11,7 +11,7 @@ const ProfileSection = () => {
             'lg:items-center'
         )}>
             <Image src={"https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Profile-transformed.png?alt=media&token=28975845-aeb4-4a66-b66f-4b5a3e014860" || "/images/Profile.png"} alt="Picture of the author" width={133} height={133} className="hidden md:block rounded-full" />
-            <Image src={"https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Profile-transformed.png?alt=media&token=28975845-aeb4-4a66-b66f-4b5a3e014860" || "/images/Profile.png"} alt="Picture of the author" width={200} height={200} className="md:hidden rounded-full" />
+            <Image src={"https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Profile-transformed.png?alt=media&token=28975845-aeb4-4a66-b66f-4b5a3e014860" || "/images/Profile.png"} alt="Picture of the author" width={200} height={200} className="md:hidden rounded-full w-full" />
             <div className="flex flex-col ">
                 <h2 className={classNames('text-primary-0',
                     'text-[2rem]',
