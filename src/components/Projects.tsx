@@ -37,7 +37,7 @@ const Experience = ({ isActive }: {
         technologies={['React Native', 'NodeJS', 'Google Vision API', 'AWS', 'MongoDB', 'CICD']}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="/projects/splink"
-        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/splink-thumbnail%20(1).png?alt=media&token=61b5c292-92de-4732-b395-b62a21d812f0"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/splink-thumbnail%20(2).png?alt=media&token=81e509b6-796a-4296-8bf5-8c16f55687e4"
         caption="Splink"
         projectBlogLink="/projects/splink"
       />
