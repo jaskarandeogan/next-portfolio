@@ -1,7 +1,8 @@
 import classNames from 'classnames'
 import React from 'react'
 import { AiOutlineTwitter } from 'react-icons/ai'
-import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { CgFileDocument } from "react-icons/cg";
 
 
 const SocialIcons = ({
@@ -40,11 +41,11 @@ const SocialIcons = ({
             <button
                 onClick={
                     () => {
-                        window.open('https://www.instagram.com/jskrndeogxn/')
+                        window.open('https://github.com/jaskarandeogan')
                     }
                 }
             >
-                <FaInstagram className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
+                <FaGithub className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
                     variant === "primary" && 'text-primary-0',
                     variant === 'splink' && 'text-splink-secondary',
                     variant === 'felix' && 'text-felix-primary'
@@ -54,11 +55,11 @@ const SocialIcons = ({
             <button
                 onClick={
                     () => {
-                        window.open('https://github.com/jaskarandeogan')
+                        window.open('/Jaskaran-resume.pdf', '_blank')
                     }
                 }
             >
-                <FaGithub className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
+                <CgFileDocument className={classNames('h-9 w-9 hover:-translate-y-1 transition-all',
                     variant === "primary" && 'text-primary-0',
                     variant === 'splink' && 'text-splink-secondary',
                     variant === 'felix' && 'text-felix-primary'

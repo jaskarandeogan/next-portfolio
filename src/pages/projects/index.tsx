@@ -11,9 +11,24 @@ const index = () => {
             year: 2024,
             title: 'Payfelix - Remastered',
             madeAt: 'Felix Payment Systems',
-            technologies: ['Wordpress', 'Elementor', 'GSAP', 'Analytics', 'Integrations'],
+            technologies: ['Wordpress', 'Elementor', 'GSAP', 'Analytics', 'Integrations', "UI/UX Design"],
             link: '/projects/payfelix',
             isComingSoon: false
+        },
+        {
+            year:2024,
+            title:'OAuth App',
+            madeAt:'Client Demo Project',
+            technologies: ['Next JS', 'Context API', "OAuth", "Vercel", "Firebase Auth"],
+            link: 'https://auth.j4skaran.ca',
+            isComingSoon: false
+        },
+        {
+            year: 2023,
+            title: 'AI Designs',
+            madeAt: 'Freelance',
+            technologies: ['Wordpress', 'Gutanberg', 'Hostinger', 'Elementor', 'SEO'],
+            link: 'https://anandishwar.com/',
         },
         {
             year: 2022,
@@ -39,14 +54,6 @@ const index = () => {
             link: '/projects/homechow',
             isComingSoon: false
         },
-        {
-            year: 2021,
-            title: 'AI Designs',
-            madeAt: 'Freelance',
-            technologies: ['Wordpress', 'Gutanberg', 'Hostinger', 'Elementor', 'SEO'],
-            link: 'https://anandishwar.com/',
-            isComingSoon: true
-        }
     ]
     return (
         <div>

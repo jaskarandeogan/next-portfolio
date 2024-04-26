@@ -52,7 +52,7 @@ const payfelix = ({
                     </div>
                 </div>
                 <div>
-                    <HashtagList hashtags={['Wordpress', 'Elementor', 'Google Analytics', 'Zoho', 'JS', 'Integrations']}
+                    <HashtagList hashtags={['Wordpress', 'Elementor', 'Google Analytics', 'Zoho', 'JS', 'Integrations', 'SEO', 'UI/UX', 'Web Design']}
                         colors={["#1A99D6", "#D30079", "#00558F", "text-splink-primary",]}
                     />
                 </div>
@@ -73,10 +73,10 @@ const payfelix = ({
                 </section>
                 <section className='mt-8 flex flex-col md:grid grid-cols-2 gap-10'>
                     <div className='p-5 shadow-md border rounded-xl  hover:shadow-sky-200 transition-shadow'>
-                        <div>
+                        {/* <div>
                             <Image src="/projects/payfelix/retail-grocery.jpg" alt="Payfelix" width={500} height={500} className="rounded-md w-full" />
-                        </div>
-                        <div className='mt-8'>
+                        </div> */}
+                        <div className=''>
                             <h3 className='text-felix-secondary font-bold '>
                                 Retail and Grocery Stores
                             </h3>
@@ -86,10 +86,10 @@ const payfelix = ({
                         </div>
                     </div>
                     <div className='p-5 shadow-md border rounded-xl  hover:shadow-sky-200 transition-shadow'>
-                        <div>
+                        {/* <div>
                             <Image src="/projects/payfelix/transportation.jpg" alt="Payfelix" width={500} height={500} className="rounded-md w-full" />
-                        </div>
-                        <div className='mt-8'>
+                        </div> */}
+                        <div className=''>
                             <h3 className='text-felix-secondary font-bold '>
                                 Transportation
                             </h3>
@@ -99,10 +99,10 @@ const payfelix = ({
                         </div>
                     </div>
                     <div className='p-5 shadow-md border rounded-xl  hover:shadow-sky-200 transition-shadow'>
-                        <div>
+                        {/* <div>
                             <Image src="/projects/payfelix/caffes.jpg" alt="Payfelix" width={500} height={500} className="rounded-md w-full" />
-                        </div>
-                        <div className='mt-8'>
+                        </div> */}
+                        <div className=''>
                             <h3 className='text-felix-secondary font-bold '>
                                 Cafes and Restaurants
                             </h3>
@@ -112,10 +112,10 @@ const payfelix = ({
                         </div>
                     </div>
                     <div className='p-5 shadow-md border rounded-xl  hover:shadow-sky-200 transition-shadow'>
-                        <div>
+                        {/* <div>
                             <Image src="/projects/payfelix/service-industry.jpg" alt="Payfelix" width={500} height={500} className="rounded-md w-full" />
-                        </div>
-                        <div className='mt-8'>
+                        </div> */}
+                        <div className=''>
                             <h3 className='text-felix-secondary font-bold '>
                                 Service Industry
                             </h3>
@@ -127,13 +127,7 @@ const payfelix = ({
                 </section>
 
                 <section className='mt-24'>
-                    <h4 className='flex items-center gap-2'>
-                        <MdOutlinePhoneIphone className='text-[#A1AAA5]' />
-                        <span className='text-[#A1AAA5] font-medium'>
-                            Softpos Technology
-                        </span>
-                    </h4>
-                    <h2 className='font-bold text-2xl'>Website’s system <span className='text-felix-primary'>architecture</span></h2>
+                    <h2 className='font-bold text-2xl'>System <span className='text-felix-primary'>architecture</span></h2>
                     <p className='mt-2 font-medium'>
                         High level system architecture of this web application
                     </p>
@@ -144,16 +138,64 @@ const payfelix = ({
                         caption: System architecture
                     </p>
                 </section>
+                <p className='font-medium text-center mt-10'>
+                    Please feel free to visit the <Link target="_blank" rel="noopener noreferrer" href={'https://payfelix.com'} className='text-felix-primary font-bold hover:underline'>live site.</Link>
+                </p>
+                <section className='mt-24'>
+                    <h2 className='font-bold text-2xl'>My contributions in <span className='text-felix-primary'>UI/UX</span></h2>
+                    <p className='mt-2 font-medium'>
+                        While I was working on this project, I had this chance to create a re-design of the blog/news page. I wanted to make it more engaging and interactive for the users. I spent some time in looking at good practices of0 UI/UX and how to make it SEO friendly as well. After some research and a number of iterations, I created a complete wireframe and then mock up of News page. I used a lot of white space and a clean layout to make the content more readable. I also added a few animations to make the page more dynamic. I think the new design is more modern and user-friendly. I hope you like it!
+                    </p>
+                    <p className='font-medium md:text-center mt-10'>
+                        News Page <Link target="_blank" rel="noopener noreferrer" href={'https://payfelix.com/news'} className='text-felix-primary font-bold hover:underline'>payfelix.com/news</Link>
+                    </p>
+                </section>
+                <section className='mt-24'>
+                    <h2 className='font-bold text-2xl '>Site <span className='text-felix-primary'>Web-Vitals</span></h2>
+                    <div className='flex flex-col  justify-between items-start gap-6 mt-6 lg:flex-row'>
+                        <a href="https://pagespeed.web.dev/analysis/https-payfelix-com/fxri9wy1vf?form_factor=desktop" target="_blank" rel="noopener noreferrer" className='w-full'>
+                            <Image src="/projects/payfelix/web-vitals-1.png" alt="Payfelix" width={500} height={500} className="rounded-md w-full" />
+                        </a>
+                        <a href="https://pagespeed.web.dev/analysis/https-payfelix-com/fxri9wy1vf?form_factor=mobile" target="_blank" rel="noopener noreferrer" className='w-full'>
+                            <Image src="/projects/payfelix/web-vitals-2.png" alt="Payfelix" width={500} height={500} className="rounded-md w-full" />
+                        </a>
+                    </div>
+                    <p className='mt-6 font-medium'>
+                        The site is optimized for performance and SEO. It has a 100/100 on performance and best practices, while 95+ on all aspects such as SEO and Accessibility. The site is fully responsive and accessible on all devices.
+                    </p>
+                    <p className='mt-2 font-medium'>
+                        Check live speed <a href="https://pagespeed.web.dev/analysis/https-payfelix-com/fxri9wy1vf?form_factor=desktop" target="_blank" rel="noopener noreferrer" className='text-felix-primary font-bold hover:underline'>here.</a>
+                    </p>
+                </section>
+                <section className='mt-24'>
+                    <h2 className='font-bold text-2xl '>Site <span className='text-felix-primary'>SEO</span></h2>
+                    <div className='flex flex-col  justify-between items-start gap-6 mt-6 lg:flex-row'>
+                        <div className='flex-1 flex flex-col gap-2 w-full'>
+                            <Image src="/projects/payfelix/seo-1.png" alt="Payfelix" width={500} height={500} className="rounded-md w-full" />
+                            <span className='text-center w-full italic'>
+                                Ranking 4th on Google among other SDK competitors
+                            </span>
+                        </div>
+                        <div className='flex-1 flex flex-col gap-2 w-full'>
+                            <Image src="/projects/payfelix/seo-2.png" alt="Payfelix" width={500} height={500} className="rounded-md w-full" />
+                            <span className='text-center w-full italic'>
+                                Ranking 3rd on Google among other SoftPOS competitors
+                            </span>
+                        </div>
+                    </div>
+                    <p className='mt-6 font-medium'>
+                        After I optimized the site to achieve technical SEO best practices, we saw a notable improvement in site ranking. This optimization led to a significant increase in organic search traffic. Moreover, there was an overall surge in site visitors by 225%, which marked an increase from the usual 40-50 daily visits to well over 130.
+                    </p>
+                </section>
                 <section className='mt-24'>
                     <h2 className='font-bold text-2xl'>My reflection on this <span className='text-felix-primary'>project</span></h2>
                     <p className='mt-2 font-medium'>
                         Working on this web application was a new journey for me. I dived into the world of WordPress CMS and got my hands on the Elementor framework to put together dynamic pages. It was a bit of a learning curve, trying to build a site that was not only fully manageable through a CMS but also had that modern, interactive feel to it. Elementor was a game changer, really. It came with so many built-in components, but the cool part was that I could also get creative and slot in my own HTML and JavaScript into these widget containers. And the cherry on top? WordPress is so open to third-party integrations. That made a huge difference. Reflecting on it all, this project stretched my skills and made me see just how powerful and flexible these tools can be in the right hands.
                     </p>
                     <p className='font-medium md:text-center mt-10'>
-                        Thanks for reading! Please feel free to visit the <Link target="_blank" rel="noopener noreferrer" href={'https://payfelix.com'} className='text-felix-primary font-bold'>live site.</Link>
+                        Thanks for reading! Please feel free to visit the <Link target="_blank" rel="noopener noreferrer" href={'https://payfelix.com'} className='text-felix-primary font-bold hover:underline'>live site.</Link>
                     </p>
                 </section>
-
 
                 <div className='flex justify-between items-center mt-20'>
                     <LinkButton leftIcon={<FiArrowUpLeft />} classnames='px-0 text-[#1A99D6]' onClick={() => {
@@ -163,7 +205,10 @@ const payfelix = ({
                         window.open("/projects/homechow", "_self")
                     }}> Next</LinkButton>
                 </div>
-                <div className='flex flex-col justify-center items-center py-20'>
+                <div className='flex flex-col justify-center items-center py-20 gap-6'>
+                    <p className='font-medium'>
+                        Contact me to know more about this project!
+                    </p>
                     <SocialIcons
                         variant='felix'
                     />

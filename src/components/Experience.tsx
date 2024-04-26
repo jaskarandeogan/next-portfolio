@@ -16,14 +16,14 @@ const Experience = ({isActive}:{
     name: "Garden",
     website: "https://www.gardenintel.com/",
     startDate: "Nov 2022",
-    endDate: "May 2023",
+    endDate: "Apr 2023",
   }
 
   const homechow ={
     name: "Homechow",
     website: "https://www.linkedin.com/company/homechow-ca",
-    startDate: "Jan 2022",
-    endDate: "Apr 2022",
+    startDate: "Jan 2023",
+    endDate: "Apr 2023",
   }
 
   return (
