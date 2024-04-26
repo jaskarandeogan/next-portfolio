@@ -51,8 +51,8 @@ const Home = () => {
     }, [inView1, entry1, inView2, entry2, inView3, entry3, inView4, entry4, section1Ref, section2Ref, section3Ref, section4Ref])
 
     return (
-        <section className="flex md:mx-[50px] xl:mx-[140px] gap-5 h-screen">
-            <section className="hidden flex-1 md:flex flex-col h-full max-w-[450px] pt-[100px]  justify-between">
+        <section className="flex max-w-[1200px] xl:max-w-[1400px] mx-auto gap-5 h-screen">
+            <section className="hidden flex-1 md:flex flex-col h-full max-w-[450px] pt-[100px] ml-8 justify-between">
                 <div className="flex-1 flex flex-col gap-5 lg:gap-[100px]">
                     <ProfileSection />
                     <ColumnNavigation
@@ -67,8 +67,12 @@ const Home = () => {
             </section>
             <section className="flex-1 flex flex-col p-4 md:p-0  w-full gap-[50px] md:gap-[150px] overflow-y-scroll ">
                 <div className='flex flex-col gap-4 md:hidden'>
-                    <ProfileSection />
-                    <SocialIcons />
+                    <div className='m-auto'>
+                        <ProfileSection />
+                    </div>
+                    <div className="">
+                        <SocialIcons  className={"justify-start"}/>
+                    </div>
                 </div>
                 <div id="about" className={classNames('md:pt-[100px]')} ref={section1Ref}>
                     <h1 className={classNames('font-medium text-3xl mb-7', activeItem === 'About' && 'text-grey-8 transition-all')}>About Me</h1>
@@ -114,7 +118,6 @@ const Home = () => {
                         }
                     } />
                 </button>
-
             </div>
         </section>
     )

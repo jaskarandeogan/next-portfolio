@@ -6,10 +6,10 @@ const Experience = ({isActive}:{
   isActive: boolean
 }) => {
   const payfelix = {
-    name: "Payfelix",
+    name: "Felix payment systems",
     website: "https://www.payfelix.com",
     startDate: "May 2023",
-    endDate: "Present",
+    endDate: "Apr 2024",
   }
 
   const garden ={
@@ -33,8 +33,8 @@ const Experience = ({isActive}:{
         company={payfelix}
         startDate={payfelix.startDate}
         endDate={payfelix.endDate}
-        description="At @PayFelix, my role as a web developer centers around devising software solutions for the Marketing department's unique challenges. I thrive on embracing fresh challenges and crafting innovative solutions to drive progress."
-        technologies={["MERN", "TypeScript", "Wordpress", "Cloud", "Felix Portal"]}
+        description="At Felix, my role as a web developer centered around devising software solutions for the Marketing department's unique challenges. I thrive on embracing fresh challenges and crafting innovative solutions to drive progress."
+        technologies={["MERN", "TypeScript", "Wordpress", "cloud", "VPS", "Elavon PAPI"]}
       />
       <ExperienceCard
         title="Full Stack Engineer"

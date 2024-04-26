@@ -9,7 +9,7 @@ const Chips = ({
     className?: string
 }) => {
     return (
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 ">
             {technologies.map((technology, index) => (
                <p key={index} className={classNames('text-xs', 'font-normal','px-2 py-1', 'text-primary-0','border border-primary-0 rounded-full', 'bg-secondary-0/15', className)}>{technology}</p>
 

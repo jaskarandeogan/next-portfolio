@@ -41,6 +41,7 @@ const ExperienceCard = ({
             'transition-all',
             'flex',
             'flex-col',
+            'gap-2',
             '2xl:flex-row',
             '2xl:gap-10',
             'px-4',
@@ -49,9 +50,11 @@ const ExperienceCard = ({
             <p className={classNames('text-lg', 'min-w-[200px]', 'font-medium')}>
                 {startDate} - {endDate}
             </p>
-            <div className={classNames('flex flex-col gap-6')}>
+            <div className={classNames('flex flex-col')}>
                 <a href={company.website} target='_blank'>
-                    <h2 className={classNames('text-primary-0', 'font-semibold',
+                    <h3 className={classNames(
+                        'text-primary-0', 
+                        'font-semibold',
                         'text-xl',
                         'md:text-2xl',
                         'xl:text-3xl',
@@ -60,18 +63,20 @@ const ExperienceCard = ({
                         'flex',
                         'items-center'
                     )}
-    
+
                     >
                         {title} - {company.name} <span className='p-2 group-hover:-translate-y-2 transition-all group-hover:text-secondary-0'><MdArrowOutward /></span>
-                    </h2>
+                    </h3>
                 </a>
-                <p className={classNames('')}>
+                <p className={classNames('mt-1')}>
                     {description}
                 </p>
-                <Chips technologies={technologies}
-                    className={classNames('group-hover:text-secondary-0', 'group-hover:border-secondary-0', 'group-hover:bg-secondary-0/15',
-                        'transition-all')}
-                />
+                <div className='mt-8'>
+                    <Chips technologies={technologies}
+                        className={classNames('group-hover:text-secondary-0', 'group-hover:border-secondary-0', 'group-hover:bg-secondary-0/15',
+                            'transition-all')}
+                    />
+                </div>
             </div>
         </div>
     )

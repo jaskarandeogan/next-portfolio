@@ -53,20 +53,20 @@ const ProjectCard = ({
         )}>
             <div className={classNames('min-w-fit flex flex-col gap-2 items-center')}>
                 <Image src={image || '/projects/1.png'} alt={title} width={400} height={300}
-                    className='object-cover rounded-sm  xl:hidden'
+                    className='object-cover rounded-sm  xl:hidden w-full'
                     loading='lazy'
                 />
-                <Image src={image || '/projects/1.png'} alt={title} width={200} height={200}
-                    className='object-cover rounded-sm  hidden xl:block'
+                <Image src={image || '/projects/1.png'} alt={title} width={200} height={100}
+                    className='object-cover rounded-sm w-[220px] h-[170px] hidden xl:block'
                     loading='eager'
                 />
-                <span className='italic text-center hidden xl:block'>{caption}</span>
+                {/* <span className='italic text-center hidden xl:block'>{caption}</span> */}
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-2'>
                 <a href={projectBlogLink}>
-                    <h2 className='text-primary-0 font-semibold text:2xl lg:3xl'>
+                    <h3 className='text-primary-0 font-semibold'>
                         {title} {isNew && <span className='text-secondary-0 text-xs'>New</span>}
-                    </h2>
+                    </h3>
                 </a>
                 <p>
                     {truncateText(description, 20)}

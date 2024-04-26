@@ -21,15 +21,25 @@ const Experience = ({ isActive }: {
         isNew={true}
       />
       <ProjectCard
+        title="OAuth App"
+        description="AuthDemo is a web application that showcases fast and super intuitive authentication methods like OAuth, built with ReactJS and deployed on vercel."
+        technologies={['Next JS', 'Context API', "OAuth", "Vercel", "Firebase Auth"]}
+        githubLink="https://github.com/jaskarandeogan/oauth-examples"
+        liveLink="https://auth.j4skaran.ca/"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/oAuth-app.png?alt=media&token=92564b5b-81b4-4e4a-b4be-9f1cc07ac47a"
+        caption="Splink"
+        projectBlogLink="https://auth.j4skaran.ca/"
+        isNew={true}
+      />
+      <ProjectCard
         title="Splink"
         description="Splink, a mobile application developed over a focused 12-week period, is reshaping the shopping landscape. This project goes beyond mere transactions; it's about connecting people, saving money, and making a positive impact in our communities."
         technologies={['React Native', 'NodeJS', 'Google Vision API', 'AWS', 'MongoDB', 'CICD']}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="/projects/splink"
-        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/splink-thumbnail.png?alt=media&token=83b2d8b4-3c54-488a-951a-de7a4db0eff6"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/splink-thumbnail%20(1).png?alt=media&token=61b5c292-92de-4732-b395-b62a21d812f0"
         caption="Splink"
         projectBlogLink="/projects/splink"
-        isNew={true}
       />
       <ProjectCard
         title="Garden - Pulse"

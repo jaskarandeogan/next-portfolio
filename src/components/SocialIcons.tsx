@@ -5,10 +5,11 @@ import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 
 
 const SocialIcons = ({
-    variant = 'primary' || 'splink' || 'felix'
+    variant = 'primary' || 'splink' || 'felix',
+    className = 'justify-center'
 }) => {
     return (
-        <section className={classNames('flex', 'gap-8', 'items-center', 'justify-center', 'md:justify-start')}>
+        <section className={classNames('flex', 'gap-8', 'items-center', 'md:justify-start', className)}>
             <button
                 onClick={() => {
                     window.open('https://twitter.com/DeoganJaskaran')

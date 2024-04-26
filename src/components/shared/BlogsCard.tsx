@@ -23,7 +23,7 @@ const BlogsCard = ({
             'transition-all',
             'flex',
             'flex-col',
-            'md:flex-row',
+            'xl:flex-row',
             'gap-5',
             'md:gap-10',
             'px-4',
@@ -32,14 +32,14 @@ const BlogsCard = ({
         )}>
             <div className={classNames('flex min-w-fit')}>
                 <Image src={image || '/blogs/1.png'} alt={title} width={400} height={300}
-                    className='object-cover rounded-sm  xl:hidden'
+                    className='object-cover rounded-sm w-full xl:hidden'
                 />
-                <Image src={image || '/blogs/1.png'} alt={title} width={200} height={200}
-                    className='object-cover rounded-sm  hidden xl:block'
+                <Image src={image || '/blogs/1.png'} alt={title} width={200} height={100}
+                    className='object-cover rounded-sm w-[220px] h-[150px] hidden xl:block'
                 />
 
             </div>
-            <div className='flex flex-col gap-5'>
+            <div className='flex flex-col justify-between gap-5'>
                 <div className='flex flex-col gap-3'>
                     <a href={link}>
                         <h2 className='text-secondary-0 font-semibold text-lg'>
