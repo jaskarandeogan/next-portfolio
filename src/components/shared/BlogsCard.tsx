@@ -40,9 +40,9 @@ const BlogsCard = ({
 
             </div>
             <div className='flex flex-col justify-between gap-5'>
-                <div className='flex flex-col gap-3'>
+                <div className='flex flex-col gap-2'>
                     <a href={link}>
-                        <h2 className='text-secondary-0 font-semibold text-lg'>
+                        <h2 className='text-secondary-0 font-semibold text-xl'>
                             {title}
                         </h2>
                     </a>
