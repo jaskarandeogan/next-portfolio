@@ -18,7 +18,7 @@ const index = () => {
         {
             year:2024,
             title:'OAuth App',
-            madeAt:'Client Demo Project',
+            madeAt:'Client Demo',
             technologies: ['Next JS', 'Context API', "OAuth", "Vercel", "Firebase Auth"],
             link: 'https://auth.j4skaran.ca',
             isComingSoon: false
@@ -26,7 +26,7 @@ const index = () => {
         {
             year: 2023,
             title: 'AI Designs',
-            madeAt: 'Freelance',
+            madeAt: 'Architect Portfolio - Client',
             technologies: ['Wordpress', 'Gutanberg', 'Hostinger', 'Elementor', 'SEO'],
             link: 'https://anandishwar.com/',
         },
