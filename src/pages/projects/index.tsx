@@ -79,7 +79,16 @@ const index = () => {
         technologies: ['Elementor', 'Marketing', 'GSAP', 'Analytics', 'Integrations', "UI/UX Design"],
         link: 'https://payfelix.com/get-tap-to-pay-sdk/',
         isComingSoon: false
-    }]
+    },
+    {
+        year: 2024,
+        title:'Sneaker Company - Landing',
+        madeAt:'Client Demo',
+        technologies:['NextJS', 'ContextAPI', 'Tailwind CSS', 'Headless UI', 'Authentications', 'gradients'],
+        link:'https://auth.j4skaran.ca',
+        isComingSoon:false
+    }
+]
 
     return (
         <div>

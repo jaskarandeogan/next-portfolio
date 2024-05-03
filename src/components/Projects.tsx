@@ -12,7 +12,7 @@ const Experience = ({ isActive }: {
       <ProjectCard
         title="Payfelix - Remastered"
         description="Payfelix is the future of payment acceptance. Integrate NFC payments in your app quickly and securely without proprietary card readers, compliance burden or unnecessary go-to-market costs."
-        technologies={["Wordpress", "Elementor", "Namecheap", "Analytics", "Zoho", ]}
+        technologies={["Wordpress", "Elementor", "Namecheap", "Analytics", "Zoho",]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://payfelix.com/"
         image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Payfelix.jpg?alt=media&token=33f30d76-99a1-4c4b-a74f-39471b3682f3&_gl=1*1ky5gq4*_ga*NzU2NzY3NjI5LjE2ODY1MzQ5MDI.*_ga_CW55HF8NVT*MTY5Nzk2NjAzNC40LjEuMTY5Nzk2NjM2MS4xNC4wLjA."
@@ -21,12 +21,12 @@ const Experience = ({ isActive }: {
         isNew={true}
       />
       <ProjectCard
-        title="OAuth App"
+        title="Landing Oauth App"
         description="AuthDemo is a web application that showcases fast and super intuitive authentication methods like OAuth, built with ReactJS and deployed on vercel."
-        technologies={['Next JS', 'Context API', "OAuth", "Vercel", "Firebase Auth"]}
-        githubLink="https://github.com/jaskarandeogan/oauth-examples"
+        technologies={['Next JS', 'Context API', "OAuth", "TailwindCSS", "Headless UI"]}
+        githubLink="https://github.com/jaskarandeogan/landing-oauth-app"
         liveLink="https://auth.j4skaran.ca/"
-        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/oAuth-app.png?alt=media&token=92564b5b-81b4-4e4a-b4be-9f1cc07ac47a"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/oAuth-app.png?alt=media&token=63605877-ddba-4ce2-aa6f-149e57a210b3"
         caption="Splink"
         projectBlogLink="https://auth.j4skaran.ca/"
         isNew={true}
