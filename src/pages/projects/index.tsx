@@ -4,6 +4,7 @@ import LinkButton from '@/components/shared/LinkButton'
 import { FiArrowUpLeft, FiArrowUpRight } from 'react-icons/fi'
 import Chips from '@/components/shared/Chips'
 import SocialIcons from '@/components/SocialIcons'
+import { isUnionTypeNode } from 'typescript'
 
 const index = () => {
     const projects = [
@@ -22,6 +23,15 @@ const index = () => {
             madeAt: 'Client Demo',
             technologies: ['Next JS', 'Context API', "OAuth", "Vercel", "Firebase Auth"],
             link: 'https://auth.j4skaran.ca',
+            isComingSoon: false,
+            isOutboundLink: true
+        },
+        {
+            year: 2024,
+            title: 'Web3 Marketplace ',
+            madeAt: 'Client Demo',
+            technologies: ['Next JS', 'TailwindCSS', 'Ethers', "headless UI"],
+            link: 'https://marketplace.j4skaran.ca',
             isComingSoon: false,
             isOutboundLink: true
         },

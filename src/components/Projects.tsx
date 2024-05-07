@@ -27,7 +27,7 @@ const Experience = ({ isActive }: {
         githubLink="https://github.com/jaskarandeogan/landing-oauth-app"
         liveLink="https://auth.j4skaran.ca/"
         image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/oAuth-app.png?alt=media&token=63605877-ddba-4ce2-aa6f-149e57a210b3"
-        caption="Splink"
+        caption="Landing Oauth App"
         projectBlogLink="https://auth.j4skaran.ca/"
         isNew={true}
       />
@@ -40,6 +40,17 @@ const Experience = ({ isActive }: {
         image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/splink-thumbnail%20(2).png?alt=media&token=81e509b6-796a-4296-8bf5-8c16f55687e4"
         caption="Splink"
         projectBlogLink="/projects/splink"
+      />
+      <ProjectCard
+        title="Marketplace"
+        description="UI prototype for marketplace showcasing user authentication and country-specific views."
+        technologies={['Next JS', 'Context API', "TailwindCSS", "Headless UI"]}
+        githubLink="https://github.com/jaskarandeogan/marketplace"
+        liveLink="https://marketplace.j4skaran.ca/"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/marketplace.png?alt=media&token=8508dbec-4ba0-4f82-9680-53f7d463772a"
+        caption="Marketplace"
+        projectBlogLink="https://marketplace.j4skaran.ca/"
+        isNew={true}
       />
       <ProjectCard
         title="Garden - Pulse"

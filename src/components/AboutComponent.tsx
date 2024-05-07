@@ -20,7 +20,7 @@ const AboutComponent = ({ isActive = false }: {
           rightIcon={<MdArrowOutward />}
           classnames='px-0'
           onClick={() => {
-            window.open('/Jaskaran-resume.pdf', '_blank')
+            window.open('/Jaskaran-Deogan.pdf', '_blank')
           }}
         >
           Resume
