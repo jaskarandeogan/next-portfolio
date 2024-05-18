@@ -21,11 +21,11 @@ const Home = () => {
     });
 
     const [section2Ref, inView2, entry2] = useInView({
-        threshold: 0.4,
+        threshold: 0.6,
     });
 
     const [section3Ref, inView3, entry3] = useInView({
-        threshold: 0.1,
+        threshold: 0.6,
     });
 
     const [section4Ref, inView4, entry4] = useInView({
@@ -34,21 +34,30 @@ const Home = () => {
 
     const [activeItem, setActiveItem] = useState('About');
     const [isChatOpen, setIsChatOpen] = useState(false);
+    const [isNavigated, setIsNavigated] = useState(false);
 
     useEffect(() => {
         if (inView1) {
-            setActiveItem('About')
+            if (!isNavigated) setActiveItem('About')
         } else if (inView2) {
-            setActiveItem('Experience')
-
+            if (!isNavigated) setActiveItem('Experience')
         } else if (inView3) {
-            setActiveItem('Projects')
-
+            if (!isNavigated) setActiveItem('Projects')
         } else if (inView4) {
-            setActiveItem('Blogs')
+            if (!isNavigated) setActiveItem('Blogs')
         }
-        isChatOpen && setIsChatOpen(false)
-    }, [inView1, entry1, inView2, entry2, inView3, entry3, inView4, entry4, section1Ref, section2Ref, section3Ref, section4Ref])
+       isChatOpen && setIsChatOpen(false);
+    }, [inView1, entry1, inView2, entry2, inView3, entry3, inView4, entry4, isNavigated, isChatOpen]);
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setIsNavigated(false);
+        }, 1000);
+    
+        return () => clearTimeout(timeoutId);
+      },      [isNavigated]);
+
+    
 
     return (
         <section className="flex max-w-[1200px] xl:max-w-[1400px] mx-auto gap-5 h-screen">
@@ -58,7 +67,7 @@ const Home = () => {
                     <ColumnNavigation
                         activeItem={activeItem}
                         setActiveItem={setActiveItem}
-
+                        setIsNavigated={setIsNavigated}
                     />
                 </div>
                 <div className="flex flex-col justify-end flex-1 pb-10">
@@ -71,7 +80,7 @@ const Home = () => {
                         <ProfileSection />
                     </div>
                     <div className="">
-                        <SocialIcons  className={"justify-start"}/>
+                        <SocialIcons className={"justify-start"} />
                     </div>
                 </div>
                 <div id="about" className={classNames('md:pt-[100px]')} ref={section1Ref}>

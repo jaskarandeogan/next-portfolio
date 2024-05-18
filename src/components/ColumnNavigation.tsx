@@ -11,8 +11,10 @@ const ColumnNavigation = (
   {
     activeItem = 'About',
     setActiveItem = () => { },
+    setIsNavigated = () => { },
   }: {
     activeItem: string; setActiveItem: Dispatch<SetStateAction<string>>;
+    setIsNavigated: Dispatch<SetStateAction<boolean>>;
   }
 ) => {
   const [navigationItems, setNavigationItems] = useState<NavigationItem[]>([
@@ -29,6 +31,7 @@ const ColumnNavigation = (
 
   const handleSelection = (label: string) => {
     setActiveItem(label);
+    setIsNavigated(true);
   }
 
 
