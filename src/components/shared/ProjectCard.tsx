@@ -16,7 +16,8 @@ const ProjectCard = ({
     image = "/projects/1.png",
     projectBlogLink = "https://github.com",
     caption= "caption here",
-    isNew = false
+    isNew = false,
+    isComingSoon = false
 }: {
     title: string,
     description: string,
@@ -25,8 +26,9 @@ const ProjectCard = ({
     liveLink: string,
     projectBlogLink: string,
     image?: string,
-    caption?: string
-    isNew?: boolean
+    caption?: string,
+    isNew?: boolean,
+    isComingSoon?: boolean
 }) => {
     const truncateText = (text: string, maxWords: number) => {
         const words = text.split(' ');
@@ -65,7 +67,7 @@ const ProjectCard = ({
             <div className='flex flex-col gap-2'>
                 <a href={projectBlogLink}>
                     <h3 className='text-primary-0 font-semibold'>
-                        {title} {isNew && <span className='text-secondary-0 text-xs'>New</span>}
+                        {title} {isNew && <span className='text-secondary-0 text-xs'>New</span>} {isComingSoon && <span className='text-secondary-0 text-xs'>Coming Soon</span>}
                     </h3>
                 </a>
                 <p>

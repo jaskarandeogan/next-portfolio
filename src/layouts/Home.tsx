@@ -65,7 +65,7 @@ const Home = () => {
                     <SocialIcons />
                 </div>
             </section>
-            <section className="flex-1 flex flex-col p-4 md:p-0  w-full gap-[50px] md:gap-[150px] overflow-y-scroll ">
+            <section className="flex-1 flex flex-col p-4 md:p-0  w-full gap-[50px] md:gap-[150px] overflow-y-scroll scroll-smooth">
                 <div className='flex flex-col gap-4 md:hidden'>
                     <div className='m-auto'>
                         <ProfileSection />

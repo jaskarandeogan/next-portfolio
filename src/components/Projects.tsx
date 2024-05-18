@@ -32,6 +32,16 @@ const Experience = ({ isActive }: {
         isNew={true}
       />
       <ProjectCard
+        title="Scramble"
+        description="Scramble is an invite-only web3 marketplace that facilitates pro-privacy products."
+        technologies={['NextJS', 'NodeJS', 'Firebase SDK', 'Coolify.IO', 'CICD', "Wireframes", "UI/UX Design"]}
+        githubLink="https://github.com/jaskarandeogan"
+        liveLink="https://scramblesolutions.com/"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/scramble.png?alt=media&token=e19dfa55-58fa-40f3-873d-173588b16227"
+        caption="Scramble"
+        projectBlogLink="https://scramblesolutions.com/"
+      />
+      <ProjectCard
         title="Splink"
         description="Splink, a mobile application developed over a focused 12-week period, is reshaping the shopping landscape. This project goes beyond mere transactions; it's about connecting people, saving money, and making a positive impact in our communities."
         technologies={['React Native', 'NodeJS', 'Google Vision API', 'AWS', 'MongoDB', 'CICD']}
@@ -50,7 +60,7 @@ const Experience = ({ isActive }: {
         image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/marketplace.png?alt=media&token=8508dbec-4ba0-4f82-9680-53f7d463772a"
         caption="Marketplace"
         projectBlogLink="https://marketplace.j4skaran.ca/"
-        isNew={true}
+        isComingSoon={true}
       />
       <ProjectCard
         title="Garden - Pulse"

@@ -84,6 +84,14 @@ const index = () => {
 
     const landingPages = [{
         year: 2024,
+        title: 'Scramble Landing',
+        madeAt: 'Scramble Solutions',
+        technologies: ['NextJS', 'NodeJS', 'Firebase SDK', 'Coolify.IO', 'CICD', "Wireframes", "UI/UX Design"],
+        link: 'https://scramblesolutions.com/',
+        isComingSoon: false
+    },
+    {
+        year: 2024,
         title: 'Tap to Pay SDK',
         madeAt: 'Felix Payment Systems',
         technologies: ['Elementor', 'Marketing', 'GSAP', 'Analytics', 'Integrations', "UI/UX Design"],
@@ -92,13 +100,13 @@ const index = () => {
     },
     {
         year: 2024,
-        title:'Sneaker Company - Landing',
-        madeAt:'Client Demo',
-        technologies:['NextJS', 'ContextAPI', 'Tailwind CSS', 'Headless UI', 'Authentications', 'gradients'],
-        link:'https://auth.j4skaran.ca',
-        isComingSoon:false
+        title: 'Sneaker Company - Landing',
+        madeAt: 'Client Demo',
+        technologies: ['NextJS', 'ContextAPI', 'Tailwind CSS', 'Headless UI', 'Authentications', 'gradients'],
+        link: 'https://auth.j4skaran.ca',
+        isComingSoon: false
     }
-]
+    ]
 
     return (
         <div>
