@@ -37,7 +37,7 @@ const Experience = ({ isActive }: {
         technologies={['NextJS', 'NodeJS', 'Firebase SDK', 'Coolify.IO', 'CICD', "Wireframes", "UI/UX Design"]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://scramblesolutions.com/"
-        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/scramble.png?alt=media&token=e19dfa55-58fa-40f3-873d-173588b16227"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/scramble.jpg?alt=media&token=088e5370-b88b-432f-841d-951c35ab8bfb"
         caption="Scramble"
         projectBlogLink="https://scramblesolutions.com/"
       />
