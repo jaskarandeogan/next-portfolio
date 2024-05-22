@@ -21,15 +21,15 @@ const Home = () => {
     });
 
     const [section2Ref, inView2, entry2] = useInView({
-        threshold: 0.6,
+        threshold: 0.2,
     });
 
     const [section3Ref, inView3, entry3] = useInView({
-        threshold: 0.6,
+        threshold: 0.2,
     });
 
     const [section4Ref, inView4, entry4] = useInView({
-        threshold: 0.1,
+        threshold: 0.2,
     });
 
     const [activeItem, setActiveItem] = useState('About');
@@ -113,21 +113,6 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <div className='absolute bottom-0 right-0  m-5 md:m-10 flex flex-col justify-end items-end gap-8'>
-                {isChatOpen &&
-                    <Contact
-                        isChatOpen={isChatOpen}
-                        setIsChatOpen={setIsChatOpen}
-                    />
-                }
-                <button>
-                    <BsChatTextFill className='text-primary-0 text-6xl h-8 w-8' onClick={
-                        () => {
-                            setIsChatOpen(!isChatOpen)
-                        }
-                    } />
-                </button>
-            </div>
         </section>
     )
 }
