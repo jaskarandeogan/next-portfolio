@@ -34,7 +34,7 @@ const Experience = ({ isActive }: {
       />
       <ProjectCard
         title="Scramble"
-        description="Scramble is an invite-only web3 marketplace that facilitates pro-privacy products."
+        description="Personal data scrambled to de-risk businesses and their customers from data breaches."
         technologies={['NextJS', 'NodeJS', 'Firebase SDK', 'Coolify.IO', 'CICD', "Wireframes", "UI/UX Design"]}
         githubLink="https://github.com/jaskarandeogan"
         liveLink="https://scramblesolutions.com/"
