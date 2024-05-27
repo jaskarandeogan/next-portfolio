@@ -33,7 +33,7 @@ const ExperienceCard = ({
             'rounded-lg',
             'group',
             'hover:bg-grey-4',
-            'border',
+            'border-2',
             'border-grey-4',
             'hover:shadow-lg',
             'hover:border',

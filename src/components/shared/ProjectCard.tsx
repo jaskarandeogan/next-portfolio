@@ -6,6 +6,7 @@ import { MdArrowOutward } from 'react-icons/md'
 import Image from 'next/image'
 import Chips from './Chips'
 import LinkButton from './LinkButton'
+import Link from 'next/link'
 
 const ProjectCard = ({
     title = 'Project Title',
@@ -17,7 +18,8 @@ const ProjectCard = ({
     projectBlogLink = "https://github.com",
     caption= "caption here",
     isNew = false,
-    isComingSoon = false
+    isComingSoon = false,
+    isOutboundLink = false
 }: {
     title: string,
     description: string,
@@ -28,7 +30,8 @@ const ProjectCard = ({
     image?: string,
     caption?: string,
     isNew?: boolean,
-    isComingSoon?: boolean
+    isComingSoon?: boolean,
+    isOutboundLink?: boolean
 }) => {
     const truncateText = (text: string, maxWords: number) => {
         const words = text.split(' ');
@@ -55,21 +58,21 @@ const ProjectCard = ({
         )}>
             <div className={classNames('min-w-fit flex flex-col gap-2 items-center')}>
                 <Image src={image || '/projects/1.png'} alt={title} width={400} height={300}
-                    className='object-cover rounded-sm  xl:hidden w-full'
+                    className='object-cover rounded-md  xl:hidden w-full shadow-md'
                     loading='lazy'
                 />
                 <Image src={image || '/projects/1.png'} alt={title} width={200} height={100}
-                    className='object-cover rounded-sm w-[220px] h-[170px] hidden xl:block'
+                    className='object-cover rounded-md w-[220px] h-[170px] hidden xl:block shadow-md'
                     loading='eager'
                 />
                 {/* <span className='italic text-center hidden xl:block'>{caption}</span> */}
             </div>
             <div className='flex flex-col gap-2'>
-                <a href={projectBlogLink}>
+                <Link href={projectBlogLink} target={isOutboundLink ? "_blank" : "_self"}>
                     <h3 className='text-primary-0 font-semibold'>
                         {title} {isNew && <span className='text-secondary-0 text-xs'>New</span>} {isComingSoon && <span className='text-secondary-0 text-xs'>Coming Soon</span>}
                     </h3>
-                </a>
+                </Link>
                 <p>
                     {truncateText(description, 20)}
                 </p>
@@ -91,7 +94,7 @@ const ProjectCard = ({
                             <LinkButton
                                 rightIcon={<MdArrowOutward />}
                                 onClick={() => {
-                                    window.open(projectBlogLink, '_self')
+                                    window.open(projectBlogLink, isOutboundLink ? '_blank' : '_self')
                                 }}
                             >
                                 Read More
@@ -103,7 +106,7 @@ const ProjectCard = ({
                     <LinkButton
                         rightIcon={<MdArrowOutward />}
                         onClick={() => {
-                            window.open(projectBlogLink, '_self')
+                            window.open(projectBlogLink, isOutboundLink ? '_blank' : '_self')
                         }}
                     >
                         Read More

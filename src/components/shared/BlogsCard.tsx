@@ -32,10 +32,10 @@ const BlogsCard = ({
         )}>
             <div className={classNames('flex min-w-fit')}>
                 <Image src={image || '/blogs/1.png'} alt={title} width={400} height={300}
-                    className='object-cover rounded-sm w-full xl:hidden'
+                    className='object-cover rounded-md w-full xl:hidden'
                 />
                 <Image src={image || '/blogs/1.png'} alt={title} width={200} height={100}
-                    className='object-cover rounded-sm w-[220px] h-[150px] hidden xl:block'
+                    className='object-cover rounded-md w-[220px] h-[150px] hidden xl:block'
                 />
 
             </div>

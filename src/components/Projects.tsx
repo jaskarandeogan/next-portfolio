@@ -29,6 +29,7 @@ const Experience = ({ isActive }: {
         image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/oAuth-app.png?alt=media&token=63605877-ddba-4ce2-aa6f-149e57a210b3"
         caption="Landing Oauth App"
         projectBlogLink="https://auth.j4skaran.ca/"
+        isOutboundLink={true}
         isNew={true}
       />
       <ProjectCard
@@ -40,6 +41,8 @@ const Experience = ({ isActive }: {
         image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/scramble.jpg?alt=media&token=088e5370-b88b-432f-841d-951c35ab8bfb"
         caption="Scramble"
         projectBlogLink="https://scramblesolutions.com/"
+        isNew={true}
+        isOutboundLink={true}
       />
       <ProjectCard
         title="Splink"
@@ -61,6 +64,7 @@ const Experience = ({ isActive }: {
         caption="Marketplace"
         projectBlogLink="https://marketplace.j4skaran.ca/"
         isComingSoon={true}
+        isOutboundLink={true}
       />
       <ProjectCard
         title="Garden - Pulse"
