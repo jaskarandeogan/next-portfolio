@@ -36,7 +36,7 @@ const ExperienceCard = ({
             'border-2',
             'border-grey-4',
             'hover:shadow-lg',
-            'hover:border',
+            'hover:border-2',
             'hover:border-secondary-4',
             'transition-all',
             'flex',
