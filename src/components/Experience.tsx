@@ -8,7 +8,7 @@ const Experience = ({ isActive }: {
 
   const scramble = {
     name: "Scramble",
-    website: "https://www.scramblesolutions.com",
+    website: "https://scramblesolutions.com/",
     startDate: "Apr 2024",
     endDate: "Present",
   }
