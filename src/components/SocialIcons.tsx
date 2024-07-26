@@ -55,7 +55,7 @@ const SocialIcons = ({
             <button
                 onClick={
                     () => {
-                        window.open('/Jaskaran-resume.pdf', '_blank')
+                        window.open('/Jaskaran-Deogan.pdf', '_blank')
                     }
                 }
             >
