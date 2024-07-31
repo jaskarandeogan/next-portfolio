@@ -10,6 +10,18 @@ const Experience = ({ isActive }: {
   return (
     <section className='flex flex-col gap-10'>
       <ProjectCard
+        title="Scramble"
+        description="Personal data scrambled to de-risk businesses and their customers from data breaches."
+        technologies={['NextJS', 'NodeJS', 'Firebase SDK', 'Coolify.IO', 'CICD', "Wireframes", "UI/UX Design"]}
+        githubLink="https://github.com/jaskarandeogan"
+        liveLink="https://scramblesolutions.com/"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/scramble.jpg?alt=media&token=088e5370-b88b-432f-841d-951c35ab8bfb"
+        caption="Scramble"
+        projectBlogLink="https://scramblesolutions.com/"
+        isNew={true}
+        isOutboundLink={true}
+      />
+      <ProjectCard
         title="Payfelix - Remastered"
         description="Payfelix is the future of payment acceptance. Integrate NFC payments in your app quickly and securely without proprietary card readers, compliance burden or unnecessary go-to-market costs."
         technologies={["Wordpress", "Elementor", "Namecheap", "Analytics", "Zoho",]}
@@ -31,18 +43,6 @@ const Experience = ({ isActive }: {
         projectBlogLink="https://auth.j4skaran.ca/"
         isOutboundLink={true}
         isNew={true}
-      />
-      <ProjectCard
-        title="Scramble"
-        description="Personal data scrambled to de-risk businesses and their customers from data breaches."
-        technologies={['NextJS', 'NodeJS', 'Firebase SDK', 'Coolify.IO', 'CICD', "Wireframes", "UI/UX Design"]}
-        githubLink="https://github.com/jaskarandeogan"
-        liveLink="https://scramblesolutions.com/"
-        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/scramble.jpg?alt=media&token=088e5370-b88b-432f-841d-951c35ab8bfb"
-        caption="Scramble"
-        projectBlogLink="https://scramblesolutions.com/"
-        isNew={true}
-        isOutboundLink={true}
       />
       <ProjectCard
         title="Splink"
