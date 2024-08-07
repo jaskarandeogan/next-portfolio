@@ -10,12 +10,28 @@ const index = () => {
     const projects = [
         {
             year: 2024,
+            title: 'Scramble',
+            madeAt: 'Scramble Solutions',
+            technologies: ['NextJS', 'NodeJS', 'Firebase SDK', 'Coolify.IO', 'CICD', "Wireframes", "UI/UX Design"],
+            link: 'https://scramblesolutions.com/',
+            isComingSoon: false
+        },
+        {
+            year: 2024,
             title: 'Payfelix - Remastered',
             madeAt: 'Felix Payment Systems',
             technologies: ['Wordpress', 'Elementor', 'GSAP', 'Analytics', 'Integrations', "UI/UX Design"],
             link: '/projects/payfelix',
             isComingSoon: false,
             isOutboundLink: false
+        },
+        {
+            year: 2024,
+            title: 'Scramble OIDC Sandbox',
+            madeAt: 'Scramble Solutions',
+            technologies: ['Python', 'Django', 'OIDC Auth', 'Coolify.IO', 'Gunicorn', "Nginx", "Docker"],
+            link: 'https://sandbox.scramblesolutions.com/',
+            isComingSoon: false
         },
         {
             year: 2024,

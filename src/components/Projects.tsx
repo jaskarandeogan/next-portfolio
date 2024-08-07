@@ -33,6 +33,18 @@ const Experience = ({ isActive }: {
         isNew={true}
       />
       <ProjectCard
+        title="Scramble OIDC Sandbox"
+        description="Personal data scrambled to de-risk businesses and their customers from data breaches."
+        technologies={['Python','Django', 'OIDC Auth', 'PostgreSQL', 'Coolify.IO', 'Gunicorn', "Nginx", "Docker"]}
+        githubLink="https://github.com/jaskarandeogan"
+        liveLink="https://sandbox.scramblesolutions.com/"
+        image="https://firebasestorage.googleapis.com/v0/b/portfolio-e70ab.appspot.com/o/Sandbox%20cover.png?alt=media&token=a16c76e0-2f9c-4a92-8c59-11bf759e0732"
+        caption="Scramble"
+        projectBlogLink="https://sandbox.scramblesolutions.com/"
+        isNew={true}
+        isOutboundLink={true}
+      />
+      <ProjectCard
         title="Landing Oauth App"
         description="AuthDemo is a web application that showcases fast and super intuitive authentication methods like OAuth, built with ReactJS and deployed on vercel."
         technologies={['Next JS', 'Context API', "OAuth", "TailwindCSS", "Headless UI"]}
